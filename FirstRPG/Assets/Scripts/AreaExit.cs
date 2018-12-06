@@ -13,7 +13,7 @@ public class AreaExit : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        theEntrance.transitionName = areaTransitionName;
+   //     theEntrance.transitionName = areaTransitionName;
 	}
 	
 	// Update is called once per frame
