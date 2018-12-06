@@ -8,7 +8,10 @@ public class PlayerController : MonoBehaviour {
     public float moveSpeed;
 
     public Animator myAnim;
+
     public static PlayerController instance;
+
+    public string areaTransitionName;
 
     // Use this for initialization
     void Start () {

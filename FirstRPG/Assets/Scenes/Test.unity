@@ -412,6 +412,7 @@ MonoBehaviour:
   TestRigidBody: {fileID: 959854369}
   moveSpeed: 5
   myAnim: {fileID: 959854371}
+  areaTransitionName: 
 --- !u!50 &959854369
 Rigidbody2D:
   serializedVersion: 4
@@ -474,11 +475,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 8.99
+      value: 9.56
       objectReference: {fileID: 0}
     - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.25
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
       propertyPath: m_LocalPosition.z
@@ -503,6 +504,24 @@ Prefab:
     - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657556925480418, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: areaTransitionName
+      value: CountrySide1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657556925480418, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: areaToLoad
+      value: Test2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
