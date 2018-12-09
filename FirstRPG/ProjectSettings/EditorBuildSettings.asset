@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Test2.unity
     guid: 5b0273884c9bb45fabe30ab0c7127c76
+  - enabled: 1
+    path: Assets/Scenes/Countryside.unity
+    guid: ac1171d351aeb4c2f9ca3c6bb5050c1d
+  - enabled: 1
+    path: Assets/Scenes/CourseChallenge.unity
+    guid: 6fd4166e137114819a33da9e25752502
   m_configObjects: {}
