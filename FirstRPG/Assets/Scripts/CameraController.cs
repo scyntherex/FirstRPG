@@ -18,7 +18,8 @@ public class CameraController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        target = PlayerController.instance.transform;
+        //target = PlayerController.instance.transform;
+        target = FindObjectOfType<PlayerController>().transform;
 
         halfHeight = Camera.main.orthographicSize;
         halfWidth = halfHeight * Camera.main.aspect;
@@ -28,7 +29,7 @@ public class CameraController : MonoBehaviour
         topRightLimit = theMap.localBounds.max
             + new Vector3(-halfWidth, -halfHeight, 0f);
 
-        PlayerController.instance.SetBounds
+        FindObjectOfType<PlayerController>().SetBounds
             (theMap.localBounds.min, theMap.localBounds.max);
     }
 

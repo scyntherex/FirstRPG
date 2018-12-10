@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TestRigidBody: {fileID: 50715137308891298}
-  moveSpeed: 5
+  moveSpeed: 10
   myAnim: {fileID: 95591037155945316}
   areaTransitionName: 
 --- !u!212 &212931939198733194
