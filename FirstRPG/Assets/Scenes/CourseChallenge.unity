@@ -6348,8 +6348,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1679858405}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.478, y: 11.819, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.467, y: 11.819, z: 0}
+  m_LocalScale: {x: 1.0235, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -6416,9 +6416,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lines:
-  - IT WORKS!!!
-  - OR DOES IT
-  - ???
+  - Who are you?
+  - I don't know you!
+  - MOM!!!
 --- !u!1 &1716242519
 GameObject:
   m_ObjectHideFlags: 0

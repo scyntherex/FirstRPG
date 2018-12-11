@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour {
     private Vector3 bottomLeftLimit;
     private Vector3 topRightLimit;
 
+    public bool canMove = true;
+
     // Use this for initialization
     void Start () {
         if (instance == null)
@@ -33,19 +35,29 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        TestRigidBody.velocity =
-        new Vector2(Input.GetAxisRaw("Horizontal"),
-            Input.GetAxisRaw("Vertical")) * moveSpeed;
+        if(canMove)
+        {
+            TestRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal"),
+                Input.GetAxisRaw("Vertical")) * moveSpeed;
+        }
+        else
+        {
+            TestRigidBody.velocity = Vector2.zero;
+        }
 
         myAnim.SetFloat("moveX", TestRigidBody.velocity.x);
         myAnim.SetFloat("moveY", TestRigidBody.velocity.y);
 
-        if(Input.GetAxisRaw("Horizontal") == 1 ||
+        if (Input.GetAxisRaw("Horizontal") == 1 ||
             Input.GetAxisRaw("Horizontal") == -1 || 
             Input.GetAxisRaw("Vertical") == 1 ||
             Input.GetAxisRaw("Vertical") == -1){
+
+            if (canMove)
+            {
                 myAnim.SetFloat("lastMoveX", Input.GetAxisRaw("Horizontal"));
                 myAnim.SetFloat("lastMoveY", Input.GetAxisRaw("Vertical"));
+            }
         }
 
         //keeps player inbounds
