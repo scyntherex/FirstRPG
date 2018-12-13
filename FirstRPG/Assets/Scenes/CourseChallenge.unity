@@ -2435,12 +2435,13 @@ MonoBehaviour:
   playerLevel: 1
   currentEXP: 250
   expToNextLevel: 
-  maxLevel: 100
+  maxLevel: 10
   basEXP: 1000
   currentHP: 0
   maxHP: 100
   currentMP: 0
   maxMP: 30
+  mpLvlBonus: 00000000010000000400000009000000100000001900000024000000310000004000000051000000
   strength: 15
   defence: 12
   wpnPwr: 0
