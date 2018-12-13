@@ -193,6 +193,7 @@
 'Assets/Scripts/AreaEntrance.cs'
 'Assets/Scripts/AreaExit.cs'
 'Assets/Scripts/CameraController.cs'
+'Assets/Scripts/CharStats.cs'
 'Assets/Scripts/DialogActivator.cs'
 'Assets/Scripts/DialogManager.cs'
 'Assets/Scripts/EssentialsLoader.cs'
