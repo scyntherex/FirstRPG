@@ -3,7 +3,7 @@
     <Files>
       <File FileName="Assets/Scripts/GameManager.cs" Line="28" Column="54" />
       <File FileName="Assets/Scripts/EssentialsLoader.cs" Line="26" Column="34" />
-      <File FileName="Assets/Scripts/GameMenu.cs" Line="62" Column="64" />
+      <File FileName="Assets/Scripts/GameMenu.cs" Line="113" Column="23" />
       <File FileName="Assets/Scripts/DialogManager.cs" Line="42" Column="67" />
       <File FileName="Assets/Scripts/AreaExit.cs" Line="43" Column="60" />
       <File FileName="Assets/Scripts/AreaEntrance.cs" Line="17" Column="57" />
