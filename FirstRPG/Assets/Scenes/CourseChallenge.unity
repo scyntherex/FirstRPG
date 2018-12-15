@@ -4532,6 +4532,10 @@ MonoBehaviour:
   - {fileID: 254677446}
   - {fileID: 135055745}
   - {fileID: 358306892}
+  statusButtons:
+  - {fileID: 1748403447}
+  - {fileID: 2043411953}
+  - {fileID: 583316489}
 --- !u!1 &745577276
 GameObject:
   m_ObjectHideFlags: 0
@@ -6994,6 +6998,17 @@ MonoBehaviour:
       - m_Target: {fileID: 729621967}
         m_MethodName: ToggleWindow
         m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 729621967}
+        m_MethodName: OpenStatus
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

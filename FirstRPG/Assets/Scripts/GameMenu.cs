@@ -15,6 +15,8 @@ public class GameMenu : MonoBehaviour {
     public Image[] charImage;
     public GameObject[] charStatHolder;
 
+    public GameObject[] statusButtons;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -72,6 +74,8 @@ public class GameMenu : MonoBehaviour {
 
     public void ToggleWindow(int windowNumber)
     {
+        UpdateMainStats();
+
         for(int i = 0; i < windows.Length; i++)
         {
             if(i == windowNumber)
@@ -94,5 +98,19 @@ public class GameMenu : MonoBehaviour {
 
         theMenu.SetActive(false);
         GameManager.instance.gameMenuOpen = false;
+    }
+
+    public void OpenStatus()
+    {
+        //update information
+        UpdateMainStats();
+
+        for(int i = 0; i < statusButtons.Length; i++)
+        {
+            statusButtons[i].SetActive(playerStats[i].
+            gameObject.activeInHierarchy);
+            statusButtons[i].GetComponentInChildren<Text>().text =
+                playerStats[i].charName;
+        }
     }
 }
