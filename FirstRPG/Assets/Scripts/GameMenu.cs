@@ -22,6 +22,8 @@ public class GameMenu : MonoBehaviour {
 
     public Image statImage;
 
+    public ItemButton[] itemButtons;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -149,5 +151,28 @@ public class GameMenu : MonoBehaviour {
             - playerStats[selected].currentEXP).ToString();
 
         statImage.sprite = playerStats[selected].charImage;
+    }
+
+    public void ShowItems()
+    {
+        for(int i = 0; i < itemButtons.Length; i++)
+        {
+            itemButtons[i].buttonValue = i;
+
+            if(GameManager.instance.itemsHeld[i] != "")
+            {
+                itemButtons[i].buttonImage.gameObject.SetActive(true);
+                itemButtons[i].buttonImage.sprite =
+                    GameManager.instance.GetItemDetails(GameManager.
+                    instance.itemsHeld[i]).itemSprite;
+                itemButtons[i].amountText.text = GameManager.instance.
+                    numberOfItems[i].ToString();
+            }
+            else
+            {
+                itemButtons[i].buttonImage.gameObject.SetActive(false);
+                itemButtons[i].amountText.text = "";
+            }
+        }
     }
 }
