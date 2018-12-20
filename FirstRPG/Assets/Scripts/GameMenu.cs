@@ -149,12 +149,20 @@ public class GameMenu : MonoBehaviour {
         {
             statWpnEqp.text = playerStats[selected].equippedWpn;
         }
+        else
+        {
+            statWpnEqp.text = "None";
+        }
 
         statWpnPwr.text = playerStats[selected].wpnPwr.ToString();
 
         if (playerStats[selected].equippedArmr != "")
         {
             statArmEqp.text = playerStats[selected].equippedArmr;
+        }
+        else
+        {
+            statArmEqp.text = "None";
         }
 
         statArmPwr.text = playerStats[selected].armPwr.ToString();
