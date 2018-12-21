@@ -5408,6 +5408,13 @@ MonoBehaviour:
   - {fileID: 1604831529}
   - {fileID: 1907392930}
   - {fileID: 1476542834}
+  selectedItem: {fileID: 0}
+  buyItemName: {fileID: 1682850148}
+  buyItemDesc: {fileID: 256226157}
+  buyItemValue: {fileID: 1185433471}
+  sellItemName: {fileID: 287024737}
+  sellItemDesc: {fileID: 612171796}
+  sellItemValue: {fileID: 488427897}
 --- !u!1 &482570930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5587,8 +5594,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -288, y: 9}
-  m_SizeDelta: {x: -1120.1002, y: -74.250854}
+  m_AnchoredPosition: {x: -176.00002, y: 7.5}
+  m_SizeDelta: {x: -916, y: -75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &488427897
 MonoBehaviour:
@@ -5617,7 +5624,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 7
     m_MaxSize: 84
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 0
@@ -23018,8 +23025,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -288, y: 9}
-  m_SizeDelta: {x: -1120.1002, y: -74.250854}
+  m_AnchoredPosition: {x: -176, y: 7.500001}
+  m_SizeDelta: {x: -916, y: -75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185433471
 MonoBehaviour:
@@ -23048,7 +23055,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 7
     m_MaxSize: 84
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 0
