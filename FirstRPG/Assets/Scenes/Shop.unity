@@ -5326,6 +5326,88 @@ MonoBehaviour:
   sellMenu: {fileID: 1403964982}
   goldText: {fileID: 228636093}
   itemsForSale: []
+  buyItemButtons:
+  - {fileID: 1003694463}
+  - {fileID: 1468662727}
+  - {fileID: 1910710638}
+  - {fileID: 335358764}
+  - {fileID: 600861809}
+  - {fileID: 1601330916}
+  - {fileID: 37317030}
+  - {fileID: 1694057135}
+  - {fileID: 972478006}
+  - {fileID: 584970774}
+  - {fileID: 1259455577}
+  - {fileID: 1564040584}
+  - {fileID: 24977413}
+  - {fileID: 490033999}
+  - {fileID: 1020157252}
+  - {fileID: 330390619}
+  - {fileID: 175716575}
+  - {fileID: 594564678}
+  - {fileID: 868698550}
+  - {fileID: 1361559081}
+  - {fileID: 1023612366}
+  - {fileID: 2117934476}
+  - {fileID: 330038404}
+  - {fileID: 1723478483}
+  - {fileID: 985679709}
+  - {fileID: 62143517}
+  - {fileID: 1343358498}
+  - {fileID: 684440774}
+  - {fileID: 2102675405}
+  - {fileID: 1143820595}
+  - {fileID: 1380703486}
+  - {fileID: 555571215}
+  - {fileID: 482570932}
+  - {fileID: 2109784451}
+  - {fileID: 1456273135}
+  - {fileID: 1023500382}
+  - {fileID: 939778554}
+  - {fileID: 125740869}
+  - {fileID: 505773440}
+  - {fileID: 651667293}
+  sellItemButtons:
+  - {fileID: 791795782}
+  - {fileID: 346727995}
+  - {fileID: 812593537}
+  - {fileID: 2104003169}
+  - {fileID: 1415636129}
+  - {fileID: 688874059}
+  - {fileID: 1064900381}
+  - {fileID: 1346400764}
+  - {fileID: 1146700619}
+  - {fileID: 1931599756}
+  - {fileID: 282758449}
+  - {fileID: 1190723428}
+  - {fileID: 1904646593}
+  - {fileID: 1387341049}
+  - {fileID: 537980377}
+  - {fileID: 290954410}
+  - {fileID: 978183669}
+  - {fileID: 411948719}
+  - {fileID: 204740405}
+  - {fileID: 1251405262}
+  - {fileID: 1207684853}
+  - {fileID: 1144219751}
+  - {fileID: 1878638654}
+  - {fileID: 1681358415}
+  - {fileID: 623851093}
+  - {fileID: 1546019664}
+  - {fileID: 522238684}
+  - {fileID: 1077752460}
+  - {fileID: 2042981531}
+  - {fileID: 158949527}
+  - {fileID: 2088259289}
+  - {fileID: 1173971341}
+  - {fileID: 1003916984}
+  - {fileID: 213960385}
+  - {fileID: 1237036697}
+  - {fileID: 1353036458}
+  - {fileID: 1304255999}
+  - {fileID: 1604831529}
+  - {fileID: 1907392930}
+  - {fileID: 1476542834}
 --- !u!1 &482570930
 GameObject:
   m_ObjectHideFlags: 0
@@ -23232,6 +23314,7 @@ GameObject:
   - component: {fileID: 1192290365}
   - component: {fileID: 1192290368}
   - component: {fileID: 1192290367}
+  - component: {fileID: 1192290369}
   m_Layer: 0
   m_Name: ShopKeeper
   m_TagString: Untagged
@@ -23320,6 +23403,36 @@ MonoBehaviour:
   - 
   - Wooden Sword
   - Iron Sword
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!61 &1192290368
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -23344,6 +23457,31 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 2.2449949, y: 3.404993}
+  m_EdgeRadius: 0
+--- !u!61 &1192290369
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192290364}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.75, y: 1}
+    newSize: {x: 0.75, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.75, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &1207684851
 GameObject:

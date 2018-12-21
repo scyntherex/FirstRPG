@@ -6,7 +6,7 @@ public class ShopKeeper : MonoBehaviour {
 
     private bool canOpen;
 
-    public string[] itemsForSale;
+    public string[] itemsForSale = new string[40];
 
 	// Use this for initialization
 	void Start () {
