@@ -13,6 +13,8 @@ public class Shop : MonoBehaviour {
 
     public Text goldText;
 
+    public string[] itemsForSale;
+
 	// Use this for initialization
 	void Start () {
         instance = this;
