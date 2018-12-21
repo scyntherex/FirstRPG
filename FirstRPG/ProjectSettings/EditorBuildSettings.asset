@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CourseChallenge.unity
     guid: 6fd4166e137114819a33da9e25752502
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: 4548a25831a0142f49f23403b23ded19
   m_configObjects: {}

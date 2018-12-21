@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{C120DD88-49A4-E570-DA96-2BA5E46B723B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Items.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameMenu.cs">
     <Files>
       <File FileName="Assets/Scripts/GameManager.cs" Line="23" Column="21" />
-      <File FileName="Assets/Scripts/GameMenu.cs" Line="240" Column="31" />
+      <File FileName="Assets/Scripts/GameMenu.cs" Line="165" Column="38" />
       <File FileName="Assets/Scripts/Items.cs" Line="87" Column="51" />
       <File FileName="Assets/Scripts/ItemButton.cs" Line="27" Column="78" />
       <File FileName="Assets/Scripts/PickupItem.cs" Line="17" Column="13" />
