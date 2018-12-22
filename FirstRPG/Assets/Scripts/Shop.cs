@@ -19,8 +19,11 @@ public class Shop : MonoBehaviour {
     public ItemButton[] sellItemButtons;
 
     public Items selectedItem;
+
     public Text buyItemName, buyItemDesc, buyItemValue;
     public Text sellItemName, sellItemDesc, sellItemValue;
+
+    public int sellItemQuantity;
 
 	// Use this for initialization
 	void Start () {
@@ -112,19 +115,26 @@ public class Shop : MonoBehaviour {
 
     public void SelectBuyItem(Items buyItem)
     {
-        selectedItem = buyItem;
-        buyItemName.text = selectedItem.itemName;
-        buyItemDesc.text = selectedItem.itemDescription;
-        buyItemValue.text = "Value: " + selectedItem.price + "g";
+        if (buyItem != null)
+        {
+            selectedItem = buyItem;
+            buyItemName.text = selectedItem.itemName;
+            buyItemDesc.text = selectedItem.itemDescription;
+            buyItemValue.text = "Value: " + selectedItem.price + "g";
+        }
     }
 
-    public void SelectSellItem(Items sellItem)
+    public void SelectSellItem(Items sellItem, int sellQuantity)
     {
-        selectedItem = sellItem;
-        sellItemName.text = selectedItem.itemName;
-        sellItemDesc.text = selectedItem.itemDescription;
-        sellItemValue.text = "Value: " +
-            Mathf.FloorToInt(selectedItem.price * 0.35f).ToString() + "g";
+        if (sellItem != null)
+        {
+            selectedItem = sellItem;
+            sellItemQuantity = sellQuantity;
+            sellItemName.text = selectedItem.itemName;
+            sellItemDesc.text = selectedItem.itemDescription;
+            sellItemValue.text = "Value: " +
+                  Mathf.FloorToInt(selectedItem.price * 0.35f).ToString() + "g";
+        }
     }
 
     public void BuyItem()
@@ -150,6 +160,11 @@ public class Shop : MonoBehaviour {
                 Mathf.FloorToInt(selectedItem.price * 0.35f);
 
             GameManager.instance.RemoveItem(selectedItem.itemName);
+            sellItemQuantity--;
+            if (sellItemQuantity <= 0)
+            {
+                selectedItem = null;
+            }
         }
 
         goldText.text = GameManager.instance.currentGold.ToString() + "g";

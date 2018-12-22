@@ -11,7 +11,6 @@ public class ItemButton : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
 	}
 	
 	// Update is called once per frame
@@ -41,7 +40,8 @@ public class ItemButton : MonoBehaviour {
             if(Shop.instance.sellMenu.activeInHierarchy)
             {
                 Shop.instance.SelectSellItem(GameManager.instance.
-                GetItemDetails(GameManager.instance.itemsHeld[buttonValue]));
+                GetItemDetails(GameManager.instance.itemsHeld[buttonValue]),
+                GameManager.instance.numberOfItems[buttonValue]);
             }
         }
     }
