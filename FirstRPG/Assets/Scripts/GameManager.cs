@@ -38,7 +38,7 @@ public class GameManager : MonoBehaviour {
             PlayerController.instance.canMove = true;
         }
 
-        if(Input.GetKeyDown(KeyCode.J))
+        /*if(Input.GetKeyDown(KeyCode.J))
         {
             AddItem("Iron Armor");
             AddItem("Health Potion");
@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour {
 
             RemoveItem("Mana Potion");
             RemoveItem("Beep");
-        }
+        }*/
     }
 
     public Items GetItemDetails(string itemToGrab)
