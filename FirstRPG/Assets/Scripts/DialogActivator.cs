@@ -10,6 +10,10 @@ public class DialogActivator : MonoBehaviour {
 
     public bool isPerson = true;
 
+    public bool shouldActivateQuest;
+    public string questToMark;
+    public bool markComplete;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -21,6 +25,8 @@ public class DialogActivator : MonoBehaviour {
             && !DialogManager.instance.dialogBox.activeInHierarchy)
         {
             DialogManager.instance.showDialog(lines, isPerson);
+            DialogManager.instance.
+                ShouldActivateQuestAtEnd(questToMark, markComplete);
         }
     }
 

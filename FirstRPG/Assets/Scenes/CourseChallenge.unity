@@ -202,12 +202,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114728427932075744, guid: 236aea6edac8a4974ab8d9ad2cbfeb0b,
-        type: 2}
-      propertyPath: gameMan
-      value: 
-      objectReference: {fileID: 1387065818929126, guid: 6a66672b6cc894d81a25ade52d98d33f,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 236aea6edac8a4974ab8d9ad2cbfeb0b, type: 2}
   m_IsPrefabAsset: 0
@@ -2438,6 +2432,9 @@ MonoBehaviour:
   lines:
   - Welcome to Apokolips
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &903234262
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2507,6 +2504,9 @@ MonoBehaviour:
   lines:
   - Shop
   isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
 --- !u!61 &1186002680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2545,29 +2545,76 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1353693749 stripped
+--- !u!1 &1324484317
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1387065818929126, guid: 6a66672b6cc894d81a25ade52d98d33f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1920705823}
---- !u!114 &1353693750
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324484320}
+  - component: {fileID: 1324484319}
+  - component: {fileID: 1324484318}
+  m_Layer: 0
+  m_Name: Quest Zone
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1324484318
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1353693749}
+  m_GameObject: {fileID: 1324484317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea5bee79b49c1465abb6d632b17a34be, type: 3}
+  m_Script: {fileID: 11500000, guid: 39f14e1c7479442c09000a375bc84606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questMarkerNames:
-  - 
-  - Fight Ramses.
-  - Enter cave.
-  - Quest Test.
-  - Save the World.
-  questMarkerComplete: 
+  questToMark: Quest Test.
+  markComplete: 1
+  markOnEnter: 0
+  deactivateOnMarking: 0
+--- !u!61 &1324484319
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1324484317}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.1870661, y: 1.2206626}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.3741322, y: 3.4413252}
+  m_EdgeRadius: 0
+--- !u!4 &1324484320
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1324484317}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -14.98, y: -15.06, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1605709392
 GameObject:
   m_ObjectHideFlags: 0
@@ -6419,16 +6466,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lines:
   - n-Little Girl
-  - Who are you?
+  - You.
   - n-Player
-  - I got candy
+  - Yes?
   - n-Little Girl
-  - I don't know you!
-  - MOM!!!
+  - Did you see a chest?
+  - By a bush?
   - n-Player
-  - I was just ki--
-  - Ok! I'll go away!
+  - '...Maybe.'
+  - Why?
+  - n-Little Girl
+  - Check the fountain.
   isPerson: 1
+  shouldActivateQuest: 1
+  questToMark: Quest Test.
+  markComplete: 1
 --- !u!1 &1716242519
 GameObject:
   m_ObjectHideFlags: 0

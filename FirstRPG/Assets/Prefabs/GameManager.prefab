@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4641286586089470}
   - component: {fileID: 114428547376597340}
+  - component: {fileID: 114546685675165516}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -228,6 +229,24 @@ MonoBehaviour:
   - {fileID: 114285696194504204, guid: 87cc1d9c8c45344e9b1b04da2d6138f0, type: 2}
   - {fileID: 114735946566772002, guid: 7832f56f041fd417794153f44e242c89, type: 2}
   currentGold: 100
+--- !u!114 &114546685675165516
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1387065818929126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea5bee79b49c1465abb6d632b17a34be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questMarkerNames:
+  - 
+  - Fight Ramses.
+  - Enter cave.
+  - Quest Test.
+  - Save the World.
+  questMarkerComplete: 
 --- !u!114 &114618825860299968
 MonoBehaviour:
   m_ObjectHideFlags: 1
