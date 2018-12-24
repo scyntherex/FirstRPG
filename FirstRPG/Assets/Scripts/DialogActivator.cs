@@ -26,7 +26,7 @@ public class DialogActivator : MonoBehaviour {
         {
             DialogManager.instance.showDialog(lines, isPerson);
             DialogManager.instance.
-                ShouldActivateQuestAtEnd(questToMark, markComplete);
+            ShouldActivateQuestAtEnd(questToMark, markComplete);
         }
     }
 
