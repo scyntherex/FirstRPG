@@ -22599,6 +22599,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114546685675165516, guid: 6a66672b6cc894d81a25ade52d98d33f,
+        type: 2}
+      propertyPath: questMarkerNames.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 4641286586089470, guid: 6a66672b6cc894d81a25ade52d98d33f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.6819258
@@ -22630,6 +22635,16 @@ Prefab:
     - target: {fileID: 4641286586089470, guid: 6a66672b6cc894d81a25ade52d98d33f, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114546685675165516, guid: 6a66672b6cc894d81a25ade52d98d33f,
+        type: 2}
+      propertyPath: questMarkerNames.Array.data[5]
+      value: Do Something.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114546685675165516, guid: 6a66672b6cc894d81a25ade52d98d33f,
+        type: 2}
+      propertyPath: questMarkerNames.Array.data[6]
+      value: Back Again?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a66672b6cc894d81a25ade52d98d33f, type: 2}
