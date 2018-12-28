@@ -6,7 +6,7 @@ public class EssentialsLoader : MonoBehaviour {
 
     public GameObject UIScreen;
     public GameObject player;
-    public GameObject gameMan;
+    public GameObject gameManager;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +23,7 @@ public class EssentialsLoader : MonoBehaviour {
 
         if(GameManager.instance == null)
         {
-            Instantiate(gameMan);
+            Instantiate(gameManager);
         }
     }
 	
