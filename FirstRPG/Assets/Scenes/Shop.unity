@@ -157,6 +157,11 @@ Prefab:
       propertyPath: theMap
       value: 
       objectReference: {fileID: 853065193}
+    - target: {fileID: 114122876793247644, guid: ea42cc49582e1453a8796fe2f8085a0b,
+        type: 2}
+      propertyPath: musicToPlay
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea42cc49582e1453a8796fe2f8085a0b, type: 2}
   m_IsPrefabAsset: 0
@@ -198,6 +203,10 @@ Prefab:
     - target: {fileID: 4641286586089470, guid: 6a66672b6cc894d81a25ade52d98d33f, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1387065818929126, guid: 6a66672b6cc894d81a25ade52d98d33f, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a66672b6cc894d81a25ade52d98d33f, type: 2}
