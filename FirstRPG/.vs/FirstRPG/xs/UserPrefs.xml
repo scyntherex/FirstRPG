@@ -3,8 +3,7 @@
     <Files>
       <File FileName="Assets/Scripts/GameManager.cs" Line="22" Column="17" />
       <File FileName="Assets/Scripts/AudioManager.cs" Line="37" Column="10" />
-      <File FileName="Assets/Scripts/CameraController.cs" Line="57" Column="56" />
-      <File FileName="Assets/Scripts/GameMenu.cs" Line="263" Column="42" />
+      <File FileName="Assets/Scripts/GameMenu.cs" Line="274" Column="42" />
       <File FileName="Assets/Scripts/EssentialsLoader.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>

@@ -54,7 +54,8 @@ public class GameMenu : MonoBehaviour {
                 UpdateMainStats();
                 GameManager.instance.gameMenuOpen = true;
             }
-            AudioManager.instance.PlaySFX(5);
+            //AudioManager.instance.PlaySFX(5);
+            PlayButtonSound2();
         }
     }
 
@@ -261,5 +262,15 @@ public class GameMenu : MonoBehaviour {
     public void PlayButtonSound()
     {
         AudioManager.instance.PlaySFX(4);
+    }
+
+    public void PlayButtonSound2()
+    {
+        AudioManager.instance.PlaySFX(5);
+    }
+
+    public void PlayHurtButton()
+    {
+        AudioManager.instance.PlaySFX(3);
     }
 }
