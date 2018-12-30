@@ -6,7 +6,8 @@ public class EssentialsLoader : MonoBehaviour {
 
     public GameObject UIScreen;
     public GameObject player;
-    public GameObject gameManager;
+    public GameObject gameMan;
+    public GameObject audioMan;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +24,12 @@ public class EssentialsLoader : MonoBehaviour {
 
         if(GameManager.instance == null)
         {
-            Instantiate(gameManager);
+            Instantiate(gameMan).GetComponent<GameManager>();
+        }
+
+        if(AudioManager.instance == null)
+        {
+            Instantiate(audioMan).GetComponent<AudioManager>();
         }
     }
 	
