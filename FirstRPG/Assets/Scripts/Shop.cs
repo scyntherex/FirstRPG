@@ -44,12 +44,15 @@ public class Shop : MonoBehaviour {
         GameManager.instance.shopActive = true;
 
         goldText.text = GameManager.instance.currentGold.ToString() + "g";
+
+        GameMenu.instance.PlayButtonSound();
     }
 
     public void CloseShop()
     {
         shopMenu.SetActive(false);
         GameManager.instance.shopActive = false;
+        GameMenu.instance.PlayButtonSound();
     }
 
     public void OpenBuyMenu()
@@ -58,6 +61,8 @@ public class Shop : MonoBehaviour {
 
         buyMenu.SetActive(true);
         sellMenu.SetActive(false);
+
+        GameMenu.instance.PlayButtonSound();
 
         for (int i = 0; i < buyItemButtons.Length; i++)
         {
@@ -86,6 +91,8 @@ public class Shop : MonoBehaviour {
         sellMenu.SetActive(true);
 
         ShowSellItems();
+
+        GameMenu.instance.PlayButtonSound();
     }
 
     private void ShowSellItems()
@@ -117,6 +124,7 @@ public class Shop : MonoBehaviour {
     {
         if (buyItem != null)
         {
+            GameMenu.instance.PlayButtonSound2();
             selectedItem = buyItem;
             buyItemName.text = selectedItem.itemName;
             buyItemDesc.text = selectedItem.itemDescription;
@@ -128,6 +136,7 @@ public class Shop : MonoBehaviour {
     {
         if (sellItem != null)
         {
+            GameMenu.instance.PlayButtonSound2();
             selectedItem = sellItem;
             sellItemQuantity = sellQuantity;
             sellItemName.text = selectedItem.itemName;
@@ -146,6 +155,8 @@ public class Shop : MonoBehaviour {
                 GameManager.instance.currentGold -= selectedItem.price;
 
                 GameManager.instance.AddItem(selectedItem.itemName);
+
+                GameMenu.instance.PlayButtonSound();
             }
         }
 
@@ -161,6 +172,9 @@ public class Shop : MonoBehaviour {
 
             GameManager.instance.RemoveItem(selectedItem.itemName);
             sellItemQuantity--;
+
+            GameMenu.instance.PlayButtonSound();
+
             if (sellItemQuantity <= 0)
             {
                 selectedItem = null;
