@@ -60,6 +60,8 @@ public class Items : MonoBehaviour {
             {
                 selectedChar.strength += amountToChange;
             }
+
+            GameMenu.instance.PlayUseSound1();
         }
 
         if(isWeapon)
@@ -71,6 +73,8 @@ public class Items : MonoBehaviour {
 
             selectedChar.equippedWpn = itemName;
             selectedChar.wpnPwr = weaponStrength;
+
+            GameMenu.instance.PlayEquipSound();
         }
 
         if(isArmour)
@@ -82,6 +86,8 @@ public class Items : MonoBehaviour {
 
             selectedChar.equippedArmr = itemName;
             selectedChar.armPwr = armorStrength;
+
+            GameMenu.instance.PlayEquipSound();
         }
 
         GameManager.instance.RemoveItem(itemName);

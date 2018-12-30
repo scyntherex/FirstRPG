@@ -35,6 +35,7 @@ public class DialogManager : MonoBehaviour {
         {
             if(Input.GetButtonUp("Fire1"))
             {
+                GameMenu.instance.PlayButtonSound();
                 if (!justStarted)
                 {
                     currentLine++;

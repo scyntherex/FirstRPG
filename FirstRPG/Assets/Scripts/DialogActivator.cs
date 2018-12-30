@@ -27,6 +27,8 @@ public class DialogActivator : MonoBehaviour {
             DialogManager.instance.showDialog(lines, isPerson);
             DialogManager.instance.
             ShouldActivateQuestAtEnd(questToMark, markComplete);
+
+            //GameMenu.instance.PlayButtonSound();
         }
     }
 
