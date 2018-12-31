@@ -211,7 +211,7 @@ MonoBehaviour:
   m_MinSize: {x: 244, y: 442}
   m_MaxSize: {x: 4004, y: 8042}
   vertical: 1
-  controlID: 74
+  controlID: 103
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -595,7 +595,7 @@ MonoBehaviour:
   m_AnimEditor: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -43444
+  m_LastSelectedObjectID: -241516
 --- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -622,10 +622,10 @@ MonoBehaviour:
     height: 286
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
-    scrollPos: {x: 0, y: 275}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 4c45ffff5655ffff2456ffff2c56ffff4256ffff4e56ffff5656ffff185effff2e76ffffd2a0ffff74d0ffff1afbfffff4ffffff00000000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 169cf8ff
+    m_LastClickedID: -484330
+    m_ExpandedIDs: 7490f8ffdc9bf8ff169cf8ff4e9cf8ff76e3f8ff04f9f8ff3c52f9fffc65f9ff3c80f9ffbe94f9ffcc2cfbffea51fcff2852fcffec62fcff0e63fcff1c63fcff2463fcff047afcffbce0fcff52ecfcff5cecfcff8aecfcffaa18fdff4224fdff4c24fdff8424fdff1eeaffff3aeaffff4aefffffb0faffffb2faffffe2faffffecfaffff1afbfffff4ffffff00000000c2ca0100caca0100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -641,7 +641,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 10}
     m_SearchString: 
   m_ExpandedScenes: []
   m_CurrenRootInstanceID: 0
@@ -756,7 +756,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000222a0000da2b0000f02c0000b23e0000da460000
+    m_ExpandedIDs: 00000000222a0000da2b0000f02c0000b23e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: e42c0000aab7feff1c440000404300000e75feffe44000008a3e0000ea420000a4430000ea40000034440000848dffffa6430000000000007c3b0000524200001c2d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
