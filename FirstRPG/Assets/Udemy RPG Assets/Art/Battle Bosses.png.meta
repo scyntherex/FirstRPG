@@ -2,7 +2,7 @@ fileFormatVersion: 2
 guid: dd61146dbe36aa6449131fb544979165
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Dragon Overworld
+    21300000: Wyvern
     21300002: DAGRONS5 - Credit to Stephen 'Redshrike' Challener, MrBeast, Surt, Blarumyrran,
       Sharm, Zabin_1
     21300004: DAGRONS5 - Credit to Stephen 'Redshrike' Challener, MrBeast, Surt, Blarumyrran,
@@ -23,7 +23,7 @@ TextureImporter:
     21300020: DAGRONS5 - Credit to Stephen 'Redshrike' Challener, MrBeast, Surt, Blarumyrran,
       Sharm, Zabin_10
   externalObjects: {}
-  serializedVersion: 6
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -104,15 +104,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dragon Overworld
+      name: Wyvern
       rect:
         serializedVersion: 2
-        x: 16
-        y: 247
-        width: 66
-        height: 84
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 36
+        y: 52
+        width: 44
+        height: 52
+      alignment: 9
+      pivot: {x: 0.49999994, y: 0.507903}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,6 +152,8 @@ TextureImporter:
     edges: []
     weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
