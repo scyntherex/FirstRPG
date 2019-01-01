@@ -260,7 +260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1238015affdf248e4bb07e3bfa990a38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  charName: Woody
+  charName: Stump
   playerLevel: 3
   currentEXP: 543
   expToNextLevel: 
