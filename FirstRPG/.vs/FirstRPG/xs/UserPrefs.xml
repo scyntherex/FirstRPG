@@ -1,10 +1,10 @@
 ﻿<Properties StartupConfiguration="{C120DD88-49A4-E570-DA96-2BA5E46B723B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DestroyOverLifetime.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleManager.cs">
     <Files>
       <File FileName="Assets/Scripts/BattleChar.cs" Line="8" Column="35" />
-      <File FileName="Assets/Scripts/BattleManager.cs" Line="37" Column="48" />
+      <File FileName="Assets/Scripts/BattleManager.cs" Line="253" Column="75" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="33" Column="42" />
-      <File FileName="Assets/Scripts/DestroyOverLifetime.cs" Line="7" Column="5" />
+      <File FileName="Assets/Scripts/DamageNumber.cs" Line="31" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

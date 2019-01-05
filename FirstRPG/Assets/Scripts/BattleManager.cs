@@ -25,6 +25,8 @@ public class BattleManager : MonoBehaviour {
 
     public GameObject enemyAttackEffect;
 
+    public DamageNumber theDamageNumber;
+
 	// Use this for initialization
 	void Start () {
         instance = this;
@@ -246,5 +248,10 @@ public class BattleManager : MonoBehaviour {
             activeBattlers[target].charName);
 
         activeBattlers[target].currentHP -= dmgToGive;
+
+        Instantiate(theDamageNumber, activeBattlers[target].transform.position,
+            activeBattlers[target].transform.rotation).SetDamage(dmgToGive);
     }
+
+
 }
