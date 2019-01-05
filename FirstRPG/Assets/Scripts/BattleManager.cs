@@ -23,6 +23,8 @@ public class BattleManager : MonoBehaviour {
 
     public BattleMove[] movesList;
 
+    public GameObject enemyAttackEffect;
+
 	// Use this for initialization
 	void Start () {
         instance = this;
@@ -221,6 +223,9 @@ public class BattleManager : MonoBehaviour {
                 movePower = movesList[i].movePwr;
             }
         }
+
+        Instantiate(enemyAttackEffect, activeBattlers[currentTurn].transform.
+            position, activeBattlers[currentTurn].transform.rotation);
 
         DealDamage(selectedTarget, movePower);
     }
