@@ -2,9 +2,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleManager.cs">
     <Files>
       <File FileName="Assets/Scripts/BattleChar.cs" Line="8" Column="35" />
-      <File FileName="Assets/Scripts/BattleManager.cs" Line="253" Column="75" />
+      <File FileName="Assets/Scripts/BattleManager.cs" Line="324" Column="37" />
       <File FileName="Assets/Scripts/GameManager.cs" Line="33" Column="42" />
       <File FileName="Assets/Scripts/DamageNumber.cs" Line="31" Column="17" />
+      <File FileName="Assets/Scripts/BattleTargetButton.cs" Line="24" Column="75" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />

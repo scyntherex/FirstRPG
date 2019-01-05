@@ -56,8 +56,8 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Skeletor
-  currentHP: 500
-  maxHP: 500
+  currentHP: 200
+  maxHP: 200
   currentMP: 0
   maxMP: 0
   strength: 2

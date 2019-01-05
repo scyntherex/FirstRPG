@@ -56,8 +56,8 @@ MonoBehaviour:
   movesAvailable:
   - Slash
   charName: Arachnoob
-  currentHP: 250
-  maxHP: 250
+  currentHP: 150
+  maxHP: 150
   currentMP: 0
   maxMP: 0
   strength: 5
