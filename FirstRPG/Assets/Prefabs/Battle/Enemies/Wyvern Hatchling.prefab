@@ -53,16 +53,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Fire
   charName: Wyvern Hatchling
-  currentHP: 90
-  maxHP: 90
+  currentHP: 100
+  maxHP: 100
   currentMP: 0
   maxMP: 0
-  strength: 10
+  strength: 7
   defence: 2
-  wpnPwr: 2
-  armrPwr: 2
+  wpnPwr: 3
+  armrPwr: 1
   hasDied: 0
 --- !u!212 &212576858677403804
 SpriteRenderer:

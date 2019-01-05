@@ -53,16 +53,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Skeletor
-  currentHP: 200
-  maxHP: 200
+  currentHP: 500
+  maxHP: 500
   currentMP: 0
   maxMP: 0
   strength: 2
   defence: 10
   wpnPwr: 2
-  armrPwr: 2
+  armrPwr: 7
   hasDied: 0
 --- !u!212 &212622831513119248
 SpriteRenderer:

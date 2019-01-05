@@ -53,9 +53,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
+  movesAvailable:
+  - Slash
   charName: Arachnoob
-  currentHP: 150
+  currentHP: 250
   maxHP: 250
   currentMP: 0
   maxMP: 0

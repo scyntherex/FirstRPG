@@ -33,8 +33,8 @@ public class BattleManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.T))
         {
-            BattleStart(new string[] { "Arachnoob", "Wyvern Hatchling", 
-                "Wyvern Hatchling", "Wyvern Hatchling", "Wyvern Hatchling",
+            BattleStart(new string[] { "Arachnoob", "Skeletor", 
+                "Wyvern Hatchling", "Arachnoob", "Skeletor",
                 "Wyvern Hatchling" });
         }
 
@@ -209,6 +209,7 @@ public class BattleManager : MonoBehaviour {
 
         int selectAttack = Random.Range(0,
             activeBattlers[currentTurn].movesAvailable.Length);
+        int movePower = 0;
         for(int i = 0; i < movesList.Length; i++)
         {
             if(movesList[i].moveName == 
@@ -217,7 +218,28 @@ public class BattleManager : MonoBehaviour {
                 Instantiate(movesList[i].theEffect,
                     activeBattlers[selectedTarget].transform.position,
                     activeBattlers[selectedTarget].transform.rotation);
+                movePower = movesList[i].movePwr;
             }
         }
+
+        DealDamage(selectedTarget, movePower);
+    }
+
+    public void DealDamage(int target, int movePower)
+    {
+        float atkPwr = activeBattlers[currentTurn].strength +
+            activeBattlers[currentTurn].wpnPwr;
+        float defPwr = activeBattlers[target].defence +
+            activeBattlers[target].armrPwr;
+
+        float damageCalc = (atkPwr / defPwr) * movePower *
+            Random.Range(.9f, 1.1f);
+        int dmgToGive = Mathf.RoundToInt(damageCalc);
+
+        Debug.Log(activeBattlers[currentTurn].charName + " is dealing " +
+            damageCalc + "(" + dmgToGive + ") damage to " +
+            activeBattlers[target].charName);
+
+        activeBattlers[target].currentHP -= dmgToGive;
     }
 }
