@@ -40,8 +40,13 @@ public class BattleManager : MonoBehaviour {
 
     public int chanceToFlee = 35;
 
-	// Use this for initialization
-	void Start () {
+    public GameObject itemsMenu;
+    public ItemButton[] itemBattleButtons;
+    public Items activeItem;
+    public Text itemName, itemDesc, useButtonText;
+
+    // Use this for initialization
+    void Start () {
         instance = this;
         DontDestroyOnLoad(gameObject);
 	}
@@ -414,5 +419,47 @@ public class BattleManager : MonoBehaviour {
             battleNotice.theText.text = "Can't Escape!";
             battleNotice.Activate();
         }
+    }
+
+    public void OpenItemSelection()
+    {
+        GameManager.instance.SortItems();
+        itemsMenu.SetActive(true);
+        for(int i = 0; i < itemBattleButtons.Length; i++)
+        {
+            itemBattleButtons[i].buttonValue = i;
+
+            if (GameManager.instance.itemsHeld[i] != "")
+            {
+                itemBattleButtons[i].buttonImage.gameObject.SetActive(true);
+                itemBattleButtons[i].buttonImage.sprite =
+                    GameManager.instance.GetItemDetails(GameManager.
+                    instance.itemsHeld[i]).itemSprite;
+                itemBattleButtons[i].amountText.text = GameManager.instance.
+                    numberOfItems[i].ToString();
+            }
+            else
+            {
+                itemBattleButtons[i].buttonImage.gameObject.SetActive(false);
+                itemBattleButtons[i].amountText.text = "";
+            }
+        }
+    }
+
+    public void SelectBattleItem(Items newItem)
+    {
+        activeItem = newItem;
+        if (activeItem.isItem)
+        {
+            useButtonText.text = "Use";
+        }
+
+        if (activeItem.isWeapon || activeItem.isArmour)
+        {
+            useButtonText.text = "Equip";
+        }
+
+        itemName.text = activeItem.itemName;
+        itemDesc.text = activeItem.itemDescription;
     }
 }
