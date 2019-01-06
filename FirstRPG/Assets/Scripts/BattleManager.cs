@@ -45,6 +45,9 @@ public class BattleManager : MonoBehaviour {
     public Items activeItem;
     public Text itemName, itemDesc, useButtonText;
 
+    public GameObject itemCharChoiceMenu;
+    public Text[] itemCharChoiceNames;
+
     // Use this for initialization
     void Start () {
         instance = this;
@@ -461,5 +464,34 @@ public class BattleManager : MonoBehaviour {
 
         itemName.text = activeItem.itemName;
         itemDesc.text = activeItem.itemDescription;
+    }
+
+    public void OpenItemCharChoice()
+    {
+        itemCharChoiceMenu.SetActive(true);
+
+        for (int i = 0; i < itemCharChoiceNames.Length; i++)
+        {
+            itemCharChoiceNames[i].text = GameManager.instance.playerStats[i].
+                charName;
+            itemCharChoiceNames[i].transform.parent.gameObject.
+                SetActive(GameManager.instance.playerStats[i].gameObject.
+                activeInHierarchy);
+        }
+    }
+
+    public void CloseItemCharChoice()
+    {
+        itemCharChoiceMenu.SetActive(false);
+    }
+
+    public void UseItem(int selectChar)
+    {
+        activeItem.Use(selectChar);
+        CloseItemCharChoice();
+        GameManager.instance.SortItems();
+        UpdateUIStats();
+        itemsMenu.SetActive(false);
+        NexTurn();
     }
 }

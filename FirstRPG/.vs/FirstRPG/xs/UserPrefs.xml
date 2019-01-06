@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{C120DD88-49A4-E570-DA96-2BA5E46B723B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Items.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ItemButton.cs">
     <Files>
-      <File FileName="Assets/Scripts/BattleManager.cs" Line="427" Column="34" />
-      <File FileName="Assets/Scripts/ItemButton.cs" Line="50" Column="13" />
-      <File FileName="Assets/Scripts/GameMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BattleManager.cs" Line="49" Column="39" />
+      <File FileName="Assets/Scripts/ItemButton.cs" Line="55" Column="10" />
+      <File FileName="Assets/Scripts/GameMenu.cs" Line="250" Column="45" />
       <File FileName="Assets/Scripts/Items.cs" Line="50" Column="1" />
+      <File FileName="Assets/Scripts/BattleChar.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BattleMagicSelect.cs" Line="39" Column="63" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
