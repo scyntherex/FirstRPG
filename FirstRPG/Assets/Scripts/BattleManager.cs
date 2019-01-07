@@ -195,10 +195,12 @@ public class BattleManager : MonoBehaviour {
             if(allEnemiesDead)
             {
                 //end to Victory
+               
             }
             else
             {
                 //end in failure
+
             }
 
             battleScene.SetActive(false);
@@ -332,7 +334,7 @@ public class BattleManager : MonoBehaviour {
         DealDamage(selectedTarget, movePower);
 
         uiButtonsHolder.SetActive(false);
-        targetMenu.SetActive(false);
+        CloseTargetSelection();
 
         NexTurn();
 
@@ -368,6 +370,11 @@ public class BattleManager : MonoBehaviour {
                 targetButtons[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    public void CloseTargetSelection()
+    {
+        targetMenu.SetActive(false);
     }
 
     public void OpenMagicSelection()
@@ -491,7 +498,12 @@ public class BattleManager : MonoBehaviour {
         CloseItemCharChoice();
         GameManager.instance.SortItems();
         UpdateUIStats();
-        itemsMenu.SetActive(false);
+        CloseItemMenu();
         NexTurn();
+    }
+
+    public void CloseItemMenu()
+    {
+        itemsMenu.SetActive(false);
     }
 }

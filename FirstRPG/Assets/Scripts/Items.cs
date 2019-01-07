@@ -138,9 +138,35 @@ public class Items : MonoBehaviour {
                         }
                     }
                     GameMenu.instance.PlayUseSound1();
-                    GameManager.instance.RemoveItem(itemName);
+                }
+
+                if (isWeapon)
+                {
+                    if (selectedChar.equippedWpn != "")
+                    {
+                        GameManager.instance.AddItem(selectedChar.equippedWpn);
+                    }
+
+                    selectedChar.equippedWpn = itemName;
+                    selectedChar.wpnPwr = weaponStrength;
+
+                    GameMenu.instance.PlayEquipSound();
+                }
+
+                if (isArmour)
+                {
+                    if (selectedChar.equippedArmr != "")
+                    {
+                        GameManager.instance.AddItem(selectedChar.equippedArmr);
+                    }
+
+                    selectedChar.equippedArmr = itemName;
+                    selectedChar.armrPwr = armorStrength;
+
+                    GameMenu.instance.PlayEquipSound();
                 }
             }
         }
+        GameManager.instance.RemoveItem(itemName);
     }
 }
