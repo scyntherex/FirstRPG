@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour {
 
@@ -48,6 +49,8 @@ public class BattleManager : MonoBehaviour {
     public GameObject itemCharChoiceMenu;
     public Text[] itemCharChoiceNames;
 
+    public string gameOverScene;
+
     // Use this for initialization
     void Start () {
         instance = this;
@@ -58,9 +61,9 @@ public class BattleManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.T))
         {
-            BattleStart(new string[] { "Orc", "Skeletor", 
-                "Wyvern Hatchling", "Arachnoob", "Slime",
-                "Wyvern Hatchling" });
+            BattleStart(new string[] {"Orc", "Wyvern Hatchling", 
+                "Wyvern Hatchling", "Wyvern Hatchling", "Wyvern Hatchling",
+                "Wyvern Hatchling",});
         }
 
         
@@ -121,7 +124,9 @@ public class BattleManager : MonoBehaviour {
                             activeBattlers[i].maxMP = thePlayer.maxMP;
                             activeBattlers[i].strength = thePlayer.strength;
                             activeBattlers[i].defence = thePlayer.defence;
+                            activeBattlers[i].equippedWpn = thePlayer.equippedWpn;
                             activeBattlers[i].wpnPwr = thePlayer.wpnPwr;
+                            activeBattlers[i].equippedArmr = thePlayer.equippedArmr;
                             activeBattlers[i].armrPwr = thePlayer.armPwr;
                         }
                     }
@@ -208,17 +213,17 @@ public class BattleManager : MonoBehaviour {
             if(allEnemiesDead)
             {
                 //end to Victory
-               
+                StartCoroutine(EndBattleCo());
             }
             else
             {
                 //end in failure
-
+                StartCoroutine(GameOverCo());
             }
 
-            battleScene.SetActive(false);
+            /*battleScene.SetActive(false);
             GameManager.instance.battleActive = false;
-            battleActive = false;
+            battleActive = false;*/
         }
         else
         {
@@ -429,8 +434,9 @@ public class BattleManager : MonoBehaviour {
         if(fleeSucess < chanceToFlee)
         {
             //end battle
-            battleActive = false;
-            battleScene.SetActive(false);
+            //battleActive = false;
+            //battleScene.SetActive(false);
+            StartCoroutine(EndBattleCo());
         }
         else
         {
@@ -518,5 +524,69 @@ public class BattleManager : MonoBehaviour {
     public void CloseItemMenu()
     {
         itemsMenu.SetActive(false);
+    }
+
+    public IEnumerator EndBattleCo()
+    {
+        battleActive = false;
+        uiButtonsHolder.SetActive(false);
+        targetMenu.SetActive(false);
+        magicMenu.SetActive(false);
+        CloseItemCharChoice();
+        CloseItemMenu();
+
+        yield return new WaitForSeconds(0.5f);
+        UIFade.instance.FadeToBlack();
+        yield return new WaitForSeconds(1.5f);
+
+        for(int i = 0; i < activeBattlers.Count; i++)
+        {
+            if(activeBattlers[i].isPlayer)
+            {
+                for(int j = 0; j < GameManager.instance.playerStats.Length; j++)
+                {
+                    if(activeBattlers[i].charName == GameManager.instance.
+                        playerStats[j].charName)
+                    {
+                        GameManager.instance.playerStats[j].currentHP =
+                            activeBattlers[i].currentHP;
+                        GameManager.instance.playerStats[j].currentMP =
+                            activeBattlers[i].currentMP;
+                        GameManager.instance.playerStats[j].strength =
+                            activeBattlers[i].strength;
+                        GameManager.instance.playerStats[j].defence =
+                            activeBattlers[i].defence;
+                        GameManager.instance.playerStats[j].equippedWpn =
+                            activeBattlers[i].equippedWpn;
+                        GameManager.instance.playerStats[j].equippedArmr =
+                            activeBattlers[i].equippedArmr;
+                        GameManager.instance.playerStats[j].wpnPwr =
+                            activeBattlers[i].wpnPwr;
+                        GameManager.instance.playerStats[j].armPwr =
+                            activeBattlers[i].armrPwr;
+                    }
+                }
+            }
+
+            Destroy(activeBattlers[i].gameObject);
+        }
+
+        UIFade.instance.FadeFromBlack();
+        battleScene.SetActive(false);
+        activeBattlers.Clear();
+        currentTurn = 0;
+        GameManager.instance.battleActive = false;
+
+        AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().
+            musicToPlay);
+    }
+
+    public IEnumerator GameOverCo()
+    {
+        battleActive = false;
+        UIFade.instance.FadeToBlack();
+        yield return new WaitForSeconds(1.5f);
+        battleScene.SetActive(false);
+        SceneManager.LoadScene(gameOverScene);
     }
 }

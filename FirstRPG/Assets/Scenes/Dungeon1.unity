@@ -22093,6 +22093,7 @@ MonoBehaviour:
   - {fileID: 2088564095}
   - {fileID: 2113031335}
   - {fileID: 1353651762}
+  gameOverScene: GameOver
 --- !u!4 &1012811512
 Transform:
   m_ObjectHideFlags: 0

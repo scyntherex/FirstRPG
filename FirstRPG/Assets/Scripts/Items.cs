@@ -140,7 +140,7 @@ public class Items : MonoBehaviour {
                     GameMenu.instance.PlayUseSound1();
                 }
 
-                /*if (isWeapon)
+                if (isWeapon)
                 {
                     if (selectedChar.equippedWpn != "")
                     {
@@ -164,7 +164,7 @@ public class Items : MonoBehaviour {
                     selectedChar.armrPwr = armorStrength;
 
                     GameMenu.instance.PlayEquipSound();
-                }*/
+                }
             }
         }
         GameManager.instance.RemoveItem(itemName);
