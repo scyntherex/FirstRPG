@@ -92,4 +92,55 @@ public class Items : MonoBehaviour {
 
         GameManager.instance.RemoveItem(itemName);
     }
+
+    public void UseInBattle(int charToUseOn)
+    {
+        string charName = "";
+
+        for (int i = 0; i < GameManager.instance.playerStats.Length; i++)
+        {
+            if (i == charToUseOn)
+            {
+                charName = GameManager.instance.playerStats[i].charName;
+            }
+        }
+
+        for (int i = 0; i < BattleManager.instance.activeBattlers.Count; i++)
+        {
+            if (charName == BattleManager.instance.activeBattlers[i].charName)
+            {
+                BattleChar selectedChar = BattleManager.instance.activeBattlers[i];
+                if (isItem)
+                {
+                    if (affectHP)
+                    {
+                        if (selectedChar.currentHP < selectedChar.maxHP)
+                        {
+                            selectedChar.currentHP += amountToChange;
+
+                            if (selectedChar.currentHP >= selectedChar.maxHP)
+                            {
+                                selectedChar.currentHP = selectedChar.maxHP;
+                            }
+                        }
+
+                    }
+                    if (affectMP)
+                    {
+                        if (selectedChar.currentMP < selectedChar.maxMP)
+                        {
+                            selectedChar.currentMP += amountToChange;
+
+                            if (selectedChar.currentMP >= selectedChar.maxMP)
+                            {
+                                selectedChar.currentMP = selectedChar.maxMP;
+                            }
+                        }
+                    }
+                    GameMenu.instance.PlayUseSound1();
+                    GameManager.instance.RemoveItem(itemName);
+                }
+            }
+        }
+    }
 }

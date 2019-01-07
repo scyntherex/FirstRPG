@@ -63,7 +63,8 @@ public class BattleManager : MonoBehaviour {
                 "Wyvern Hatchling" });
         }
 
-        if(battleActive)
+        
+        if (battleActive)
         {
             if (turnWaiting)
             {
@@ -78,11 +79,6 @@ public class BattleManager : MonoBehaviour {
                     //enemy should attack
                     StartCoroutine(EnemyMoveCo());
                 }
-            }
-
-            if(Input.GetKeyDown(KeyCode.N))
-            {
-                NexTurn();
             }
         }
     }
@@ -426,6 +422,7 @@ public class BattleManager : MonoBehaviour {
 
     public void OpenItemSelection()
     {
+        AudioManager.instance.PlaySFX(4);
         GameManager.instance.SortItems();
         itemsMenu.SetActive(true);
         for(int i = 0; i < itemBattleButtons.Length; i++)
@@ -452,6 +449,7 @@ public class BattleManager : MonoBehaviour {
     public void SelectBattleItem(Items newItem)
     {
         activeItem = newItem;
+        AudioManager.instance.PlaySFX(4);
         if (activeItem.isItem)
         {
             useButtonText.text = "Use";
@@ -469,6 +467,7 @@ public class BattleManager : MonoBehaviour {
     public void OpenItemCharChoice()
     {
         itemCharChoiceMenu.SetActive(true);
+        AudioManager.instance.PlaySFX(4);
 
         for (int i = 0; i < itemCharChoiceNames.Length; i++)
         {
@@ -487,7 +486,8 @@ public class BattleManager : MonoBehaviour {
 
     public void UseItem(int selectChar)
     {
-        activeItem.Use(selectChar);
+        AudioManager.instance.PlaySFX(4);
+        activeItem.UseInBattle(selectChar);
         CloseItemCharChoice();
         GameManager.instance.SortItems();
         UpdateUIStats();
