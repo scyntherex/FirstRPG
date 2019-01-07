@@ -58,8 +58,8 @@ public class BattleManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.T))
         {
-            BattleStart(new string[] { "Arachnoob", "Skeletor", 
-                "Wyvern Hatchling", "Arachnoob", "Skeletor",
+            BattleStart(new string[] { "Orc", "Skeletor", 
+                "Wyvern Hatchling", "Arachnoob", "Slime",
                 "Wyvern Hatchling" });
         }
 

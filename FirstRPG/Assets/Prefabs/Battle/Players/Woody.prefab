@@ -56,6 +56,8 @@ MonoBehaviour:
   movesAvailable:
   - Plasma
   charName: Woody
+  equippedWpn: 
+  equippedArmr: 
   currentHP: 0
   maxHP: 0
   currentMP: 0
@@ -65,6 +67,10 @@ MonoBehaviour:
   wpnPwr: 0
   armrPwr: 0
   hasDied: 0
+  theSprite: {fileID: 212633770969682008}
+  deadSprite: {fileID: 21300046, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
+  aliveSprite: {fileID: 21300024, guid: e0ddba6d3fcf21f49949fcc95c849aac, type: 3}
+  fadeSpeed: 1
 --- !u!212 &212633770969682008
 SpriteRenderer:
   m_ObjectHideFlags: 1
