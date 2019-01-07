@@ -8,6 +8,7 @@ public class EssentialsLoader : MonoBehaviour {
     public GameObject player;
     public GameObject gameMan;
     public GameObject audioMan;
+    public GameObject battleMan;
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +31,11 @@ public class EssentialsLoader : MonoBehaviour {
         if(AudioManager.instance == null)
         {
             Instantiate(audioMan).GetComponent<AudioManager>();
+        }
+
+        if(BattleManager.instance == null)
+        {
+            Instantiate(battleMan).GetComponent<BattleManager>();
         }
     }
 	
