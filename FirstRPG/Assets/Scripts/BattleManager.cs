@@ -40,6 +40,7 @@ public class BattleManager : MonoBehaviour {
     public BattleNotification battleNotice;
 
     public int chanceToFlee = 35;
+    private bool fleeing;
 
     public GameObject itemsMenu;
     public ItemButton[] itemBattleButtons;
@@ -50,6 +51,8 @@ public class BattleManager : MonoBehaviour {
     public Text[] itemCharChoiceNames;
 
     public string gameOverScene;
+    public int rewardXP;
+    public string[] rewardItems;
 
     // Use this for initialization
     void Start () {
@@ -61,9 +64,7 @@ public class BattleManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.T))
         {
-            BattleStart(new string[] {"Orc", "Wyvern Hatchling", 
-                "Wyvern Hatchling", "Wyvern Hatchling", "Wyvern Hatchling",
-                "Wyvern Hatchling",});
+            BattleStart(new string[] {"Wyvern Hatchling"});
         }
 
         
@@ -436,6 +437,7 @@ public class BattleManager : MonoBehaviour {
             //end battle
             //battleActive = false;
             //battleScene.SetActive(false);
+            fleeing = true;
             StartCoroutine(EndBattleCo());
         }
         else
@@ -575,7 +577,17 @@ public class BattleManager : MonoBehaviour {
         battleScene.SetActive(false);
         activeBattlers.Clear();
         currentTurn = 0;
-        GameManager.instance.battleActive = false;
+        //GameManager.instance.battleActive = false;
+        if(fleeing)
+        {
+            GameManager.instance.battleActive = false;
+            fleeing = false;
+        }
+        else
+        {
+            BattleRewards.instance.OpenRewardsScreen(rewardXP, rewardItems);
+        }
+
 
         AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().
             musicToPlay);

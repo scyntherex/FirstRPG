@@ -1185,7 +1185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1307268615871454
 GameObject:
   m_ObjectHideFlags: 1
@@ -6637,6 +6637,8 @@ MonoBehaviour:
   - {fileID: 114871077079498712}
   - {fileID: 114942282135561414}
   gameOverScene: GameOver
+  rewardXP: 0
+  rewardItems: []
 --- !u!114 &114173632357461574
 MonoBehaviour:
   m_ObjectHideFlags: 1

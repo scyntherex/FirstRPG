@@ -255,7 +255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &67215137
 RectTransform:
   m_ObjectHideFlags: 0
@@ -461,6 +461,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114173133841610028, guid: 754f2a6af6325490981ba6b385ee9de8,
+        type: 2}
+      propertyPath: rewardItems.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4489393310526472, guid: 754f2a6af6325490981ba6b385ee9de8, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -492,6 +497,25 @@ Prefab:
     - target: {fileID: 4489393310526472, guid: 754f2a6af6325490981ba6b385ee9de8, type: 2}
       propertyPath: m_RootOrder
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173133841610028, guid: 754f2a6af6325490981ba6b385ee9de8,
+        type: 2}
+      propertyPath: rewardXP
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173133841610028, guid: 754f2a6af6325490981ba6b385ee9de8,
+        type: 2}
+      propertyPath: rewardItems.Array.data[0]
+      value: Wooden Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 114173133841610028, guid: 754f2a6af6325490981ba6b385ee9de8,
+        type: 2}
+      propertyPath: rewardItems.Array.data[1]
+      value: Iron Armor
+      objectReference: {fileID: 0}
+    - target: {fileID: 1299283224825940, guid: 754f2a6af6325490981ba6b385ee9de8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 754f2a6af6325490981ba6b385ee9de8, type: 2}
@@ -11469,6 +11493,10 @@ Prefab:
     - target: {fileID: 224713626878447772, guid: 5e436d6c86c70410db1d1b5800257a03,
         type: 2}
       propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1440411172415684, guid: 5e436d6c86c70410db1d1b5800257a03, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
