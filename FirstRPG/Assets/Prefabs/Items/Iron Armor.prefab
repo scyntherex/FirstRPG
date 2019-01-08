@@ -57,14 +57,14 @@ MonoBehaviour:
   isArmour: 1
   itemName: Iron Armor
   itemDescription: Shiny armor.
-  price: 25
+  price: 150
   itemSprite: {fileID: 21300014, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
-  amountToChange: 50
+  amountToChange: 0
   affectHP: 0
   affectMP: 0
   affectStr: 0
   weaponStrength: 0
-  armorStrength: 10
+  armorStrength: 20
 --- !u!212 &212898850088437162
 SpriteRenderer:
   m_ObjectHideFlags: 1

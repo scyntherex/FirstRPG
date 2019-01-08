@@ -2,15 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BattleType : MonoBehaviour {
+[System.Serializable]
+public class BattleType {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    public string[] enemies;
+    public int rewardXP;
+    public string[] rewardItems;
 }

@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\BattleMove.cs" />
     <Compile Include="Assets\Scripts\BattleNotification.cs" />
     <Compile Include="Assets\Scripts\BattleRewards.cs" />
+    <Compile Include="Assets\Scripts\BattleStarter.cs" />
     <Compile Include="Assets\Scripts\BattleTargetButton.cs" />
     <Compile Include="Assets\Scripts\BattleType.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
