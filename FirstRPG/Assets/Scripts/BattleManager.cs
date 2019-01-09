@@ -54,6 +54,9 @@ public class BattleManager : MonoBehaviour {
     public int rewardXP;
     public string[] rewardItems;
 
+    public GameObject enemyHealthBars;
+    public Slider[] healthBars;
+
     // Use this for initialization
     void Start () {
         instance = this;
@@ -62,14 +65,16 @@ public class BattleManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.T))
+		/*if(Input.GetKeyDown(KeyCode.T))
         {
             BattleStart(new string[] {"Wyvern Hatchling"});
-        }
+        }*/
 
         
         if (battleActive)
         {
+            enemyHealthBars.SetActive(true);
+            DisplayHealth();
             if (turnWaiting)
             {
                 if(activeBattlers[currentTurn].isPlayer)
@@ -92,7 +97,6 @@ public class BattleManager : MonoBehaviour {
         if(!battleActive)
         {
             battleActive = true;
-
             GameManager.instance.battleActive = true;
 
             transform.position = new Vector3(Camera.main.transform.position.x,
@@ -153,10 +157,8 @@ public class BattleManager : MonoBehaviour {
                     }
                 }
             }
-
             turnWaiting = true;
             currentTurn = Random.Range(0, activeBattlers.Count);
-
             UpdateUIStats();
         }
     }
@@ -302,6 +304,7 @@ public class BattleManager : MonoBehaviour {
         Instantiate(theDamageNumber, activeBattlers[target].transform.position,
             activeBattlers[target].transform.rotation).SetDamage(dmgToGive);
         UpdateUIStats();
+        DisplayHealth();
     }
 
     public void UpdateUIStats()
@@ -536,6 +539,7 @@ public class BattleManager : MonoBehaviour {
         magicMenu.SetActive(false);
         CloseItemCharChoice();
         CloseItemMenu();
+        enemyHealthBars.SetActive(false);
 
         yield return new WaitForSeconds(0.5f);
         UIFade.instance.FadeToBlack();
@@ -600,5 +604,22 @@ public class BattleManager : MonoBehaviour {
         yield return new WaitForSeconds(1.5f);
         battleScene.SetActive(false);
         SceneManager.LoadScene(gameOverScene);
+    }
+
+    public void DisplayHealth()
+    {
+        List<int> Enemies = new List<int>();
+        for (int i = 0; i < activeBattlers.Count; i++)
+        {
+            if (!activeBattlers[i].isPlayer)
+            {
+                Enemies.Add(i);
+            }
+        }
+        for (int i = 0; i < Enemies.Count; i++)
+        {
+            healthBars[i].value = activeBattlers[Enemies[i]].currentHP;
+            healthBars[i].maxValue = activeBattlers[Enemies[i]].maxHP;
+        }
     }
 }
