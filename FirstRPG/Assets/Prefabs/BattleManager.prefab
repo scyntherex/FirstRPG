@@ -7216,6 +7216,7 @@ MonoBehaviour:
   - {fileID: 114708542637351418, guid: 932ad35dbb5b64b3582516d28e42be22, type: 2}
   - {fileID: 114154786049644010, guid: b1b91ae3b5d90497c86d10940f1485fe, type: 2}
   - {fileID: 114109364874942110, guid: eee017bce41fc45b4b798d53b411172a, type: 2}
+  - {fileID: 114275154271383280, guid: e632f636c29d74337aa6e9eac77310f7, type: 2}
   activeBattlers: []
   currentTurn: 0
   turnWaiting: 0
@@ -7233,12 +7234,12 @@ MonoBehaviour:
       type: 2}
   - moveName: Ice
     movePwr: 65
-    moveCost: 5
+    moveCost: 10
     theEffect: {fileID: 114881843747344128, guid: b55dce7a04da74fc4a016ae276b5b13a,
       type: 2}
   - moveName: Plasma
     movePwr: 85
-    moveCost: 10
+    moveCost: 15
     theEffect: {fileID: 114143586719851622, guid: 9a6cd81968512454e852df9e2c8f1bff,
       type: 2}
   enemyAttackEffect: {fileID: 1550888073423054, guid: 0f3cbc56bac674522842b8eac8658841,
@@ -7346,6 +7347,7 @@ MonoBehaviour:
   - {fileID: 114957941848774564}
   - {fileID: 114938920799427968}
   - {fileID: 114333689134895342}
+  cannotFlee: 0
 --- !u!114 &114173632357461574
 MonoBehaviour:
   m_ObjectHideFlags: 1

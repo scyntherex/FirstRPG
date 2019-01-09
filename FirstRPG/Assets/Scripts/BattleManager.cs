@@ -57,6 +57,8 @@ public class BattleManager : MonoBehaviour {
     public GameObject enemyHealthBars;
     public Slider[] healthBars;
 
+    public bool cannotFlee;
+
     // Use this for initialization
     void Start () {
         instance = this;
@@ -67,8 +69,7 @@ public class BattleManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.T))
         {
-            BattleStart(new string[] {"Wyvern Hatchling", "Wyvern Hatchling", "Wyvern Hatchling", 
-                "Wyvern Hatchling", "Wyvern Hatchling", "Wyvern Hatchling",});
+            BattleStart(new string[] {"Hatchling"}, false);
         }
 
         
@@ -93,18 +94,18 @@ public class BattleManager : MonoBehaviour {
         }
     }
 
-    public void BattleStart(string[] enemiesToSpawn)
+    public void BattleStart(string[] enemiesToSpawn, bool setCannotFlee)
     {
         if(!battleActive)
         {
+            cannotFlee = setCannotFlee;
+
             battleActive = true;
             GameManager.instance.battleActive = true;
 
             transform.position = new Vector3(Camera.main.transform.position.x,
                 Camera.main.transform.position.y, transform.position.z);
             battleScene.SetActive(true);
-
-            AudioManager.instance.PlayBGM(0);
 
             for(int i = 0; i < playerPositions.Length; i++)
             {
@@ -157,6 +158,14 @@ public class BattleManager : MonoBehaviour {
                         }
                     }
                 }
+            }
+            if (!cannotFlee)
+            {
+                AudioManager.instance.PlayBGM(0);
+            }
+            else
+            {
+                AudioManager.instance.PlayBGM(1);
             }
             turnWaiting = true;
             currentTurn = Random.Range(0, activeBattlers.Count);
@@ -434,21 +443,29 @@ public class BattleManager : MonoBehaviour {
 
     public void Flee()
     {
-        AudioManager.instance.PlaySFX(4);
-        int fleeSucess = Random.Range(0, 100);
-        if(fleeSucess < chanceToFlee)
+        if(cannotFlee)
         {
-            //end battle
-            //battleActive = false;
-            //battleScene.SetActive(false);
-            fleeing = true;
-            StartCoroutine(EndBattleCo());
+            battleNotice.theText.text = "Can't flee Boss Battles!";
+            battleNotice.Activate();
         }
         else
         {
-            NexTurn();
-            battleNotice.theText.text = "Can't Escape!";
-            battleNotice.Activate();
+            AudioManager.instance.PlaySFX(4);
+            int fleeSucess = Random.Range(0, 100);
+            if (fleeSucess < chanceToFlee)
+            {
+                //end battle
+                //battleActive = false;
+                //battleScene.SetActive(false);
+                fleeing = true;
+                StartCoroutine(EndBattleCo());
+            }
+            else
+            {
+                NexTurn();
+                battleNotice.theText.text = "Can't Escape!";
+                battleNotice.Activate();
+            }
         }
     }
 
@@ -532,6 +549,11 @@ public class BattleManager : MonoBehaviour {
         itemsMenu.SetActive(false);
     }
 
+    public void CloseHealthBars()
+    {
+        enemyHealthBars.SetActive(false);
+    }
+
     public IEnumerator EndBattleCo()
     {
         battleActive = false;
@@ -540,7 +562,7 @@ public class BattleManager : MonoBehaviour {
         magicMenu.SetActive(false);
         CloseItemCharChoice();
         CloseItemMenu();
-        enemyHealthBars.SetActive(false);
+        CloseHealthBars();
 
         yield return new WaitForSeconds(0.5f);
         UIFade.instance.FadeToBlack();
