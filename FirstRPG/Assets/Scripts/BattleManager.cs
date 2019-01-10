@@ -75,8 +75,6 @@ public class BattleManager : MonoBehaviour {
         
         if (battleActive)
         {
-            enemyHealthBars.SetActive(true);
-            DisplayHealth();
             if (turnWaiting)
             {
                 if(activeBattlers[currentTurn].isPlayer)
@@ -344,6 +342,7 @@ public class BattleManager : MonoBehaviour {
                 playerName[i].gameObject.SetActive(false);
             }
         }
+        DisplayHealth();
     }
 
     public void PlayerAttack(string moveName, int selectedTarget)
@@ -474,6 +473,7 @@ public class BattleManager : MonoBehaviour {
         AudioManager.instance.PlaySFX(4);
         GameManager.instance.SortItems();
         itemsMenu.SetActive(true);
+        CloseHealthBars();
         for(int i = 0; i < itemBattleButtons.Length; i++)
         {
             itemBattleButtons[i].buttonValue = i;
@@ -531,6 +531,7 @@ public class BattleManager : MonoBehaviour {
     public void CloseItemCharChoice()
     {
         itemCharChoiceMenu.SetActive(false);
+        DisplayHealth();
     }
 
     public void UseItem(int selectChar)
@@ -541,6 +542,7 @@ public class BattleManager : MonoBehaviour {
         GameManager.instance.SortItems();
         UpdateUIStats();
         CloseItemMenu();
+        DisplayHealth();
         NexTurn();
     }
 
@@ -631,6 +633,7 @@ public class BattleManager : MonoBehaviour {
 
     public void DisplayHealth()
     {
+        enemyHealthBars.SetActive(true);
         List<int> Enemies = new List<int>();
         for (int i = 0; i < activeBattlers.Count; i++)
         {
