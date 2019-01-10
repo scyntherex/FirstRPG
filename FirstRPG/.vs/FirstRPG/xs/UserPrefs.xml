@@ -1,11 +1,8 @@
 ﻿<Properties StartupConfiguration="{C120DD88-49A4-E570-DA96-2BA5E46B723B}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleRewards.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/DialogManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/DamageNumber.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BattleMove.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/BattleManager.cs" Line="632" Column="26" />
-      <File FileName="Assets/Scripts/BattleStarter.cs" Line="20" Column="35" />
-      <File FileName="Assets/Scripts/BattleRewards.cs" Line="16" Column="21" />
+      <File FileName="Assets/Scripts/DialogActivator.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DialogManager.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
