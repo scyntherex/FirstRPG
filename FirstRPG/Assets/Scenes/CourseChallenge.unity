@@ -2182,11 +2182,12 @@ MonoBehaviour:
   lines:
   - n-Lance
   - You... Have.. Beaten... The Wyvern Mother?!
-  - A new hero is born!
+  - A new hero is made!
+  - Go further West! There you will find Draco City. Show them who you are!
   isPerson: 1
-  shouldActivateQuest: 0
-  questToMark: 
-  markComplete: 0
+  shouldActivateQuest: 1
+  questToMark: Next Town.
+  markComplete: 1
 --- !u!61 &422576844
 BoxCollider2D:
   m_ObjectHideFlags: 0
