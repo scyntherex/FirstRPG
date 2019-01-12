@@ -618,8 +618,8 @@ public class BattleManager : MonoBehaviour {
         }
 
 
-        AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().
-            musicToPlay);
+       //AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().
+         //   musicToPlay);
     }
 
     public IEnumerator GameOverCo()

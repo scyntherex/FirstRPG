@@ -43,6 +43,7 @@ public class BattleRewards : MonoBehaviour {
         }
 
         rewardScreen.SetActive(true);
+        AudioManager.instance.PlayBGM(6);
     }
 
     public void CloseRewardsScreen()
@@ -63,8 +64,10 @@ public class BattleRewards : MonoBehaviour {
 
         rewardScreen.SetActive(false);
         GameManager.instance.battleActive = false;
+        AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().
+           musicToPlay);
 
-        if(markQuestComplete)
+        if (markQuestComplete)
         {
             QuestManager.instance.MarkQuestComplete(questToMark);
         }
