@@ -41,12 +41,8 @@ public class GameManager : MonoBehaviour {
 
         /*if(Input.GetKeyDown(KeyCode.J))
         {
-            AddItem("Iron Armor");
-            AddItem("Health Potion");
-            AddItem("Blabla");
-
-            RemoveItem("Mana Potion");
-            RemoveItem("Beep");
+            playerStats[1].gameObject.SetActive(true);
+            playerStats[2].gameObject.SetActive(true);
         }*/
         if (Input.GetKeyDown(KeyCode.O))
             SaveData();
@@ -282,5 +278,10 @@ public class GameManager : MonoBehaviour {
         }
 
         currentGold = PlayerPrefs.GetInt("Gold", currentGold);
+    }
+
+    public void UnlockChar(int i)
+    {
+        playerStats[i].gameObject.SetActive(true);
     }
 }

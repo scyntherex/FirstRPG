@@ -18,12 +18,6 @@ public class QuestManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            Debug.Log(CheckIfComplete("Quest Test."));
-            MarkQuestComplete("Quest Test.");
-            MarkQuestIncomplete("Fight Ramses.");
-        }
 
         if (Input.GetKeyDown(KeyCode.O))
             SaveQuestData();
