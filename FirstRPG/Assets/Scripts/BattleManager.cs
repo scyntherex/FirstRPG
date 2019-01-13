@@ -51,7 +51,7 @@ public class BattleManager : MonoBehaviour {
     public Text[] itemCharChoiceNames;
 
     public string gameOverScene;
-    public int rewardXP;
+    public int rewardXP, rewardGold;
     public string[] rewardItems;
 
     public GameObject enemyHealthBars;
@@ -614,7 +614,8 @@ public class BattleManager : MonoBehaviour {
         }
         else
         {
-            BattleRewards.instance.OpenRewardsScreen(rewardXP, rewardItems);
+            BattleRewards.instance.OpenRewardsScreen
+                (rewardXP, rewardGold, rewardItems);
         }
 
 

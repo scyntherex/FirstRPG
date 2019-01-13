@@ -11152,12 +11152,14 @@ MonoBehaviour:
     rewardXP: 300
     rewardItems:
     - Wooden Sword
+    rewardGold: 5
   - enemies:
     - Skeletor
     - Hatchling
     rewardXP: 250
     rewardItems:
     - Leather Armor
+    rewardGold: 5
   - enemies:
     - Orc
     - Orc
@@ -11165,11 +11167,13 @@ MonoBehaviour:
     rewardItems:
     - Health Potion
     - Mana Potion
+    rewardGold: 5
   - enemies:
     - Slime
     rewardXP: 50
     rewardItems:
     - Iron Armor
+    rewardGold: 5
   timeBetweenBattles: 6
   activateOnEnter: 0
   activateOnStay: 1
@@ -11254,6 +11258,7 @@ MonoBehaviour:
     - Mana Potion
     - Iron Sword
     - Iron Armor
+    rewardGold: 50
   timeBetweenBattles: 6
   activateOnEnter: 1
   activateOnStay: 0

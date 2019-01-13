@@ -63,7 +63,7 @@ MonoBehaviour:
   currentMP: 0
   maxMP: 0
   strength: 1
-  defence: 20
+  defence: 15
   wpnPwr: 1
   armrPwr: 1
   hasDied: 0

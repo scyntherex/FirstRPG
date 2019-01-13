@@ -7254,6 +7254,8 @@ MonoBehaviour:
   - {fileID: 114154786049644010, guid: b1b91ae3b5d90497c86d10940f1485fe, type: 2}
   - {fileID: 114109364874942110, guid: eee017bce41fc45b4b798d53b411172a, type: 2}
   - {fileID: 114275154271383280, guid: e632f636c29d74337aa6e9eac77310f7, type: 2}
+  - {fileID: 114137162821368468, guid: 65d5d3a3b70074a0bab04b3af509c827, type: 2}
+  - {fileID: 114843296403704502, guid: a032cc8973007408b8f4f2f65759ecdc, type: 2}
   activeBattlers: []
   currentTurn: 0
   turnWaiting: 0
@@ -7375,6 +7377,7 @@ MonoBehaviour:
   - {fileID: 114942282135561414}
   gameOverScene: GameOver
   rewardXP: 0
+  rewardGold: 0
   rewardItems: []
   enemyHealthBars: {fileID: 1128390246750330}
   healthBars:

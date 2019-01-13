@@ -7,11 +7,11 @@ public class BattleRewards : MonoBehaviour {
 
     public static BattleRewards instance;
 
-    public Text xpText, itemText;
+    public Text xpText, itemText, goldText;
     public GameObject rewardScreen;
 
     public string[] rewardItems;
-    public int xpEarned;
+    public int xpEarned, goldEarned;
 
     public bool markQuestComplete;
     public string questToMark;
@@ -23,19 +23,19 @@ public class BattleRewards : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(Input.GetKeyDown(KeyCode.Y))
-        {
-            OpenRewardsScreen(54, new string[] { "Iron Armor", "Wooden Sword" });
-        }
+		
     }
 
-    public void OpenRewardsScreen(int xp, string[] rewards)
+    public void OpenRewardsScreen(int xp, int gold, string[] rewards)
     {
         xpEarned = xp;
+        goldEarned = gold;
         rewardItems = rewards;
 
         xpText.text = "Players earned " + xpEarned + " exp points.";
+        goldText.text = "Gold earned " + goldEarned + " g.";
         itemText.text = "";
+
 
         for(int i = 0; i < rewardItems.Length; i++)
         {
@@ -56,6 +56,8 @@ public class BattleRewards : MonoBehaviour {
 
             }
         }
+
+        GameManager.instance.currentGold += goldEarned;
 
         for(int i = 0; i < rewardItems.Length; i++)
         {
