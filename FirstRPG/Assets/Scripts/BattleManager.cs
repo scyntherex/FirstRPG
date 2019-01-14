@@ -11,6 +11,10 @@ public class BattleManager : MonoBehaviour {
     private bool battleActive;
 
     public GameObject battleScene;
+    //public GameObject battleBackground;
+
+    public SpriteRenderer bgRenderer;
+    public Sprite[] battleBG;
 
     public Transform[] playerPositions, enemyPositions;
 
@@ -74,6 +78,7 @@ public class BattleManager : MonoBehaviour {
 
         if (battleActive)
         {
+            bgRenderer.gameObject.SetActive(true);
             if (turnWaiting)
             {
                 if(activeBattlers[currentTurn].isPlayer)
@@ -456,6 +461,8 @@ public class BattleManager : MonoBehaviour {
                 //battleActive = false;
                 //battleScene.SetActive(false);
                 fleeing = true;
+                AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().
+                    musicToPlay);
                 StartCoroutine(EndBattleCo());
             }
             else
@@ -552,6 +559,11 @@ public class BattleManager : MonoBehaviour {
 
     public void CloseHealthBars()
     {
+        for (int i = 0; i < healthBars.Length; i++)
+        {
+            healthBars[i].value = 0;
+            healthBars[i].maxValue = 0;
+        }
         enemyHealthBars.SetActive(false);
     }
 
@@ -602,6 +614,7 @@ public class BattleManager : MonoBehaviour {
         }
 
         UIFade.instance.FadeFromBlack();
+        bgRenderer.gameObject.SetActive(false);
         battleScene.SetActive(false);
         activeBattlers.Clear();
         currentTurn = 0;
@@ -618,8 +631,8 @@ public class BattleManager : MonoBehaviour {
         }
 
 
-       //AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().
-         //   musicToPlay);
+      // AudioManager.instance.PlayBGM(FindObjectOfType<CameraController>().
+      //   musicToPlay);
     }
 
     public IEnumerator GameOverCo()
@@ -647,5 +660,10 @@ public class BattleManager : MonoBehaviour {
             healthBars[i].value = activeBattlers[Enemies[i]].currentHP;
             healthBars[i].maxValue = activeBattlers[Enemies[i]].maxHP;
         }
+    }
+
+    public void changePic(int picNumber)
+    {
+        bgRenderer.sprite = battleBG[picNumber];
     }
 }

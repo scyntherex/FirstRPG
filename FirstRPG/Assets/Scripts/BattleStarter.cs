@@ -30,8 +30,6 @@ public class BattleStarter : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        battleBackgroundManager.instance.changePic(backGroundToUse);
-
         if (inZone && PlayerController.instance.canMove)
         {
             if(Input.GetAxisRaw("Horizontal") != 0 || 
@@ -86,6 +84,7 @@ public class BattleStarter : MonoBehaviour {
 
         int selectedBattle = Random.Range(0, potentialBattles.Length);
 
+        BattleManager.instance.changePic(backGroundToUse);
         BattleManager.instance.rewardItems = potentialBattles[selectedBattle].
             rewardItems;
         BattleManager.instance.rewardXP = potentialBattles[selectedBattle].

@@ -13,7 +13,7 @@ public class GameOver : MonoBehaviour {
 
         PlayerController.instance.gameObject.SetActive(false);
         GameMenu.instance.gameObject.SetActive(false);
-        battleBackgroundManager.instance.gameObject.SetActive(false);
+        //battleBackgroundManager.instance.gameObject.SetActive(false);
         BattleManager.instance.gameObject.SetActive(false);
 
 	}
@@ -25,12 +25,10 @@ public class GameOver : MonoBehaviour {
 
     public void QuitToMain()
     {
-        //battleBackgroundManager.instance.changePic(10);
         Destroy(GameManager.instance.gameObject);
         Destroy(PlayerController.instance.gameObject);
         Destroy(GameMenu.instance.gameObject);
         Destroy(AudioManager.instance.gameObject);
-        Destroy(battleBackgroundManager.instance.gameObject);
         Destroy(BattleManager.instance.gameObject);
 
         SceneManager.LoadScene(mainMenuScene);
@@ -42,7 +40,7 @@ public class GameOver : MonoBehaviour {
         Destroy(GameManager.instance.gameObject);
         Destroy(PlayerController.instance.gameObject);
         Destroy(GameMenu.instance.gameObject);
-        Destroy(battleBackgroundManager.instance.gameObject);
+        //Destroy(BattleBackgroundManager.instance.gameObject);
         Destroy(BattleManager.instance.gameObject);
 
         SceneManager.LoadScene(loadGameScene);

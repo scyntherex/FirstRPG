@@ -10,7 +10,7 @@ public class EssentialsLoader : MonoBehaviour {
     public GameObject audioMan;
     public GameObject battleMan;
 
-    public GameObject backMan;
+    //public GameObject backMan;
 
 	// Use this for initialization
 	void Start () {
@@ -40,10 +40,10 @@ public class EssentialsLoader : MonoBehaviour {
             Instantiate(battleMan).GetComponent<BattleManager>();
         }
 
-        if(battleBackgroundManager.instance == null)
+        /*if(battleBackgroundManager.instance == null)
         {
             Instantiate(backMan).GetComponent<battleBackgroundManager>();
-        }
+        }*/
     }
 	
 	// Update is called once per frame
