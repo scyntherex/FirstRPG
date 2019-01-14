@@ -1,5 +1,14 @@
 ﻿<Properties StartupConfiguration="{C120DD88-49A4-E570-DA96-2BA5E46B723B}|">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/DialogManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/DialogActivator.cs" Line="19" Column="3" />
+      <File FileName="Assets/Scripts/UnlockChar.cs" Line="6" Column="1" />
+      <File FileName="Assets/Scripts/BattleStarter.cs" Line="95" Column="9" />
+      <File FileName="Assets/Scripts/AutoDialog.cs" Line="21" Column="33" />
+      <File FileName="Assets/Scripts/BattleManager.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="Unity.Editor" />
