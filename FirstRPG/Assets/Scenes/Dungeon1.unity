@@ -11182,6 +11182,7 @@ MonoBehaviour:
   cannotFlee: 0
   shouldCompleteQuest: 0
   questToComplete: 
+  backGroundToUse: 0
 --- !u!61 &1347439290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11267,6 +11268,7 @@ MonoBehaviour:
   cannotFlee: 1
   shouldCompleteQuest: 1
   questToComplete: Fight Dragon.
+  backGroundToUse: 0
 --- !u!61 &1374371180
 BoxCollider2D:
   m_ObjectHideFlags: 0

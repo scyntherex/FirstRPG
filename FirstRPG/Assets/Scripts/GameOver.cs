@@ -13,7 +13,9 @@ public class GameOver : MonoBehaviour {
 
         PlayerController.instance.gameObject.SetActive(false);
         GameMenu.instance.gameObject.SetActive(false);
+        battleBackgroundManager.instance.gameObject.SetActive(false);
         BattleManager.instance.gameObject.SetActive(false);
+
 	}
 	
 	// Update is called once per frame
@@ -23,20 +25,26 @@ public class GameOver : MonoBehaviour {
 
     public void QuitToMain()
     {
+        //battleBackgroundManager.instance.changePic(10);
         Destroy(GameManager.instance.gameObject);
         Destroy(PlayerController.instance.gameObject);
         Destroy(GameMenu.instance.gameObject);
         Destroy(AudioManager.instance.gameObject);
+        Destroy(battleBackgroundManager.instance.gameObject);
         Destroy(BattleManager.instance.gameObject);
+
         SceneManager.LoadScene(mainMenuScene);
     }
 
     public void LoadLastSave()
     {
+        //battleBackgroundManager.instance.changePic(10);
         Destroy(GameManager.instance.gameObject);
         Destroy(PlayerController.instance.gameObject);
         Destroy(GameMenu.instance.gameObject);
+        Destroy(battleBackgroundManager.instance.gameObject);
         Destroy(BattleManager.instance.gameObject);
+
         SceneManager.LoadScene(loadGameScene);
     }
 }

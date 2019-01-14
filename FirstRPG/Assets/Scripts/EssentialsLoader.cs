@@ -10,6 +10,8 @@ public class EssentialsLoader : MonoBehaviour {
     public GameObject audioMan;
     public GameObject battleMan;
 
+    public GameObject backMan;
+
 	// Use this for initialization
 	void Start () {
 		if(UIFade.instance == null)
@@ -36,6 +38,11 @@ public class EssentialsLoader : MonoBehaviour {
         if(BattleManager.instance == null)
         {
             Instantiate(battleMan).GetComponent<BattleManager>();
+        }
+
+        if(battleBackgroundManager.instance == null)
+        {
+            Instantiate(backMan).GetComponent<battleBackgroundManager>();
         }
     }
 	

@@ -72,7 +72,6 @@ public class BattleManager : MonoBehaviour {
             BattleStart(new string[] {"Hatchling"}, false);
         }
 
-        
         if (battleActive)
         {
             if (turnWaiting)

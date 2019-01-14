@@ -19,6 +19,8 @@ public class BattleStarter : MonoBehaviour {
     public bool shouldCompleteQuest;
     public string questToComplete;
 
+    public int backGroundToUse;
+
 	// Use this for initialization
 	void Start () {
         betweenBattleCounter = Random.Range(timeBetweenBattles * 0.5f,
@@ -27,15 +29,18 @@ public class BattleStarter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if(inZone && PlayerController.instance.canMove)
+
+        battleBackgroundManager.instance.changePic(backGroundToUse);
+
+        if (inZone && PlayerController.instance.canMove)
         {
             if(Input.GetAxisRaw("Horizontal") != 0 || 
             Input.GetAxisRaw("Vertical") != 0)
             {
                 betweenBattleCounter -= Time.deltaTime;
             }
-
-            if(betweenBattleCounter <= 0)
+            //battleBackgroundManager.instance.changePic(backGroundToUse);
+            if (betweenBattleCounter <= 0)
             {
                 betweenBattleCounter = Random.Range(timeBetweenBattles * 0.5f,
                     timeBetweenBattles * 1.5f);
