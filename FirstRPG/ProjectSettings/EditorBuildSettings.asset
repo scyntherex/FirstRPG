@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ForkedRoad.unity
     guid: cc80b42404dc14089bc8c39e0df62f81
+  - enabled: 1
+    path: Assets/Scenes/DracoCity.unity
+    guid: 91102e90dd1394d5cb26d0fb028e5543
   m_configObjects: {}
