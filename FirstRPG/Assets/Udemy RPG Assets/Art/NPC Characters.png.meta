@@ -32,6 +32,7 @@ TextureImporter:
     21300054: NPC Characters_2
     21300056: NPC Characters_3
     21300058: NPC Characters_4
+    21300060: NPC Characters_5
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -242,13 +243,33 @@ TextureImporter:
         width: 12
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 35a35414b7deb4129915382147419598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC Characters_5
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 51
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cb5e1f98be949fe846cfd64e247128
       vertices: []
       indices: 
       edges: []
