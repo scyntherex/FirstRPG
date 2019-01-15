@@ -56,7 +56,7 @@ MonoBehaviour:
   isWeapon: 0
   isArmour: 1
   itemName: Iron Armor
-  itemDescription: Shiny armor.
+  itemDescription: A standard armor.
   price: 150
   itemSprite: {fileID: 21300014, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
   amountToChange: 0

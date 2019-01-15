@@ -30,6 +30,8 @@ TextureImporter:
     21300050: NPC Characters_0
     21300052: NPC Characters_1
     21300054: NPC Characters_2
+    21300056: NPC Characters_3
+    21300058: NPC Characters_4
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -120,7 +122,7 @@ TextureImporter:
         width: 15
         height: 16
       alignment: 9
-      pivot: {x: 0.49066785, y: 0.517498}
+      pivot: {x: 0.47470266, y: 0.517498}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -200,13 +202,53 @@ TextureImporter:
         width: 12
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 22c9a8bd36e164223933e9265509f544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC Characters_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 34
+        width: 12
+        height: 15
+      alignment: 9
+      pivot: {x: 0.5, y: 0.49144718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c2eee9862fe48518dbec7e8f9d3077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC Characters_4
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 51
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a35414b7deb4129915382147419598
       vertices: []
       indices: 
       edges: []

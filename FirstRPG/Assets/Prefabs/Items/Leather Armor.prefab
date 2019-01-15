@@ -56,7 +56,7 @@ MonoBehaviour:
   isWeapon: 0
   isArmour: 1
   itemName: Leather Armor
-  itemDescription: +5 Defense.
+  itemDescription: A weak armor.
   price: 10
   itemSprite: {fileID: 21300010, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
   amountToChange: 0
