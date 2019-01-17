@@ -53,4 +53,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DracoManor2.unity
     guid: 1e043c2e0f4da47249d376e2f38a9b58
+  - enabled: 1
+    path: Assets/Scenes/DracoHouse1.unity
+    guid: 891d3f543fb724b2cb9efbb3d285e131
   m_configObjects: {}
