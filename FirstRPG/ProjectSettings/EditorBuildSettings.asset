@@ -47,4 +47,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LumberjackHouse.unity
     guid: 844b65a07bf4641e9a705fa8a9fb8ff4
+  - enabled: 1
+    path: Assets/Scenes/DracoManor1.unity
+    guid: b062cdea58a8e485ba260c926f0d0e3c
+  - enabled: 1
+    path: Assets/Scenes/DracoManor2.unity
+    guid: 1e043c2e0f4da47249d376e2f38a9b58
   m_configObjects: {}
