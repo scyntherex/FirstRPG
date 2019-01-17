@@ -55,8 +55,9 @@ MonoBehaviour:
   isItem: 1
   isWeapon: 0
   isArmour: 0
+  isCurrency: 0
   itemName: Mutton
-  itemDescription: Roasted to Perfection. +500 HP
+  itemDescription: Rare Meat. +500 HP.
   price: 50
   itemSprite: {fileID: 21300146, guid: 0bc4ed27aef38a44bb72e80f9beb5326, type: 3}
   amountToChange: 500

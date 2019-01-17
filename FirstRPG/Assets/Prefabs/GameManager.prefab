@@ -261,6 +261,8 @@ MonoBehaviour:
   - Cut trees.
   - Get Ring.
   - Return Letter.
+  - Get Slayer.
+  - Get Mutton.
   questMarkerComplete: 
 --- !u!114 &114618825860299968
 MonoBehaviour:
