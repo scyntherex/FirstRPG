@@ -349,7 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsForSale:
-  - Dragon Slayer
+  - 
   - 
   - Stinger
   - Shell
@@ -644,9 +644,9 @@ MonoBehaviour:
   - Mana Potion
   - 
   - Apple
+  - Green Apple
+  - 
   - Mutton
-  - 
-  - 
   - 
   - 
   - 

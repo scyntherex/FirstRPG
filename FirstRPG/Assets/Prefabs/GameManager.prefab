@@ -263,6 +263,9 @@ MonoBehaviour:
   - Return Letter.
   - Get Slayer.
   - Get Mutton.
+  - Talk Vegan.
+  - Talk Mrs. Ross.
+  - Get Ruby.
   questMarkerComplete: 
 --- !u!114 &114618825860299968
 MonoBehaviour:
