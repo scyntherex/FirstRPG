@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/ForkedRoad.unity
+- path: Assets/Scenes/DracoHouse3.unity
   isLoaded: 1
   isActive: 1

@@ -124,7 +124,7 @@ public class GameManager : MonoBehaviour {
             }
             else
             {
-                Debug.LogError(itemToAdd + " does not exist!");
+                //Debug.LogError(itemToAdd + " does not exist!");
             }
         }
 

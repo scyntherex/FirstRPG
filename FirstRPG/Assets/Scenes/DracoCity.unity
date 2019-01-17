@@ -113,6 +113,75 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &61570509
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0078125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268588978973722, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_Name
+      value: House2Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657556925480418, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: areaToLoad
+      value: DracoHouse2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657556925480418, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: areaTransitionName
+      value: CityHouse2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937886217709682, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: transitionName
+      value: CityHouse2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &85563959
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,7 +446,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &134977420
 BoxCollider2D:
@@ -1110,6 +1179,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &458195889
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -13.48
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -11.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0078125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268588978973722, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_Name
+      value: House4Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657556925480418, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: areaToLoad
+      value: DracoHouse4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657556925480418, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: areaTransitionName
+      value: CityHouse4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937886217709682, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: transitionName
+      value: CityHouse4
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &555656279
 GameObject:
   m_ObjectHideFlags: 0
@@ -38545,7 +38683,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4083594230057202, guid: d4ef6d0373e3c4dacbd76f9aa6cabf6b, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d4ef6d0373e3c4dacbd76f9aa6cabf6b, type: 2}
@@ -38592,8 +38730,77 @@ Transform:
   m_Children:
   - {fileID: 249661782}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1857166024
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -11.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.0078125
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4620071044477748, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_RootOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1268588978973722, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_Name
+      value: House3Exit
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657556925480418, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: areaToLoad
+      value: DracoHouse3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 114657556925480418, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: areaTransitionName
+      value: CityHouse3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114937886217709682, guid: bec46344e2bd44f6e9ff40e2b652cb20,
+        type: 2}
+      propertyPath: transitionName
+      value: CityHouse3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &1962104978
 GameObject:
   m_ObjectHideFlags: 0
@@ -38771,3 +38978,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3e7a59097d244719aefb31dcdf33b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2043809235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2043809229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8880256016ae84155827b0c5f4032754, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - Obtained Dragon Slayer.
+  isPerson: 0
+  shouldActivateQuest: 0
+  questToMark: 
+  markComplete: 0
+--- !u!61 &2043809236
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2043809229}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.017154694, y: 0.01715374}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.8125, y: 0.8125}
+    newSize: {x: 0.8125, y: 0.8125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1899014, y: 1.2585201}
+  m_EdgeRadius: 0
