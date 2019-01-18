@@ -139,7 +139,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.724144, y: -4.6666546}
@@ -383,7 +383,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.7298756, y: -4.6666546}
@@ -2610,6 +2610,10 @@ Prefab:
       propertyPath: defence
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1598349204486494, guid: cfd396faa892947b7bb42a20c43fd977, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114730074485187152, guid: cfd396faa892947b7bb42a20c43fd977, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: cfd396faa892947b7bb42a20c43fd977, type: 2}
@@ -2633,8 +2637,6 @@ MonoBehaviour:
   potentialBattles:
   - enemies:
     - Ganondalf Illusion Second
-    - Glare
-    - Glare
     rewardXP: 3000
     rewardItems: []
     rewardGold: 3000
@@ -2750,7 +2752,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.5287285, y: -6.6379137}
@@ -2850,8 +2852,6 @@ MonoBehaviour:
   potentialBattles:
   - enemies:
     - Ganondalf Illusion
-    - Glare
-    - Glare
     rewardXP: 2000
     rewardItems: []
     rewardGold: 2000
@@ -2892,8 +2892,8 @@ MonoBehaviour:
   activateOnExit: 0
   deactivateAfterStarting: 1
   cannotFlee: 1
-  shouldCompleteQuest: 0
-  questToComplete: 
+  shouldCompleteQuest: 1
+  questToComplete: Pop grass.
   backGroundToUse: 3
 --- !u!61 &1482016683
 BoxCollider2D:
@@ -3031,6 +3031,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1070801662556992, guid: 2af5273976a2449fbbda4100c52d5abc, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114121905335107728, guid: 2af5273976a2449fbbda4100c52d5abc, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: 2af5273976a2449fbbda4100c52d5abc, type: 2}
@@ -3111,11 +3115,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 1.98
+      value: 1.43
       objectReference: {fileID: 0}
     - target: {fileID: 4730275725012684, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.4
+      value: 0.26
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bec46344e2bd44f6e9ff40e2b652cb20, type: 2}
