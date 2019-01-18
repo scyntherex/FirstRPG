@@ -58,11 +58,11 @@ MonoBehaviour:
   charName: Slime
   equippedWpn: 
   equippedArmr: 
-  currentHP: 1000
-  maxHP: 1000
+  currentHP: 500
+  maxHP: 500
   currentMP: 0
   maxMP: 0
-  strength: 1
+  strength: 5
   defence: 15
   wpnPwr: 1
   armrPwr: 1

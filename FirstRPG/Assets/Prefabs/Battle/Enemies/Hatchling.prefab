@@ -58,8 +58,8 @@ MonoBehaviour:
   charName: Hatchling
   equippedWpn: 
   equippedArmr: 
-  currentHP: 100
-  maxHP: 100
+  currentHP: 120
+  maxHP: 120
   currentMP: 0
   maxMP: 0
   strength: 7

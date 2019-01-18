@@ -73,12 +73,17 @@ public class BattleManager : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.T))
         {
-            BattleStart(new string[] {"Hatchling"}, false);
+            //BattleStart(new string[] {"Hatchling"}, false);
         }
 
         if (battleActive)
         {
             bgRenderer.gameObject.SetActive(true);
+            if (GameMenu.instance.isActiveAndEnabled)
+            {
+                GameMenu.instance.CloseMenu();
+            }
+
             if (turnWaiting)
             {
                 if(activeBattlers[currentTurn].isPlayer)

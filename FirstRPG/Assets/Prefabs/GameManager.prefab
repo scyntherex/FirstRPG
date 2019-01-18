@@ -239,6 +239,7 @@ MonoBehaviour:
   - {fileID: 114206399362695248, guid: 927240a49da554d91a39192bf3e2733a, type: 2}
   - {fileID: 114625526011708882, guid: a445d6e74093440059255a4416715a6d, type: 2}
   - {fileID: 114664848940572252, guid: d95d57ba1a36842e896bd32218d1825e, type: 2}
+  - {fileID: 114303336547065178, guid: 1f71c9cd5d64c44dfb3a8dae4b5d9af8, type: 2}
   currentGold: 100
 --- !u!114 &114546685675165516
 MonoBehaviour:

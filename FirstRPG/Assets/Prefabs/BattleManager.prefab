@@ -7268,6 +7268,10 @@ MonoBehaviour:
   - {fileID: 114275154271383280, guid: e632f636c29d74337aa6e9eac77310f7, type: 2}
   - {fileID: 114137162821368468, guid: 65d5d3a3b70074a0bab04b3af509c827, type: 2}
   - {fileID: 114843296403704502, guid: a032cc8973007408b8f4f2f65759ecdc, type: 2}
+  - {fileID: 114015475861981422, guid: 32f7da88753e54d3f9de062f0dc43fb5, type: 2}
+  - {fileID: 114121905335107728, guid: 2af5273976a2449fbbda4100c52d5abc, type: 2}
+  - {fileID: 114281871612559944, guid: e67427c3b190146f08b5ed193a1dd3a8, type: 2}
+  - {fileID: 114730074485187152, guid: cfd396faa892947b7bb42a20c43fd977, type: 2}
   activeBattlers: []
   currentTurn: 0
   turnWaiting: 0
