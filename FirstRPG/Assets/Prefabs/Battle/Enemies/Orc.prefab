@@ -59,14 +59,14 @@ MonoBehaviour:
   charName: Orc
   equippedWpn: 
   equippedArmr: 
-  currentHP: 200
-  maxHP: 200
+  currentHP: 2200
+  maxHP: 2200
   currentMP: 0
   maxMP: 0
-  strength: 1
-  defence: 1
-  wpnPwr: 5
-  armrPwr: 10
+  strength: 5
+  defence: 10
+  wpnPwr: 7
+  armrPwr: 11
   hasDied: 0
   theSprite: {fileID: 212710107856809464}
   deadSprite: {fileID: 0}

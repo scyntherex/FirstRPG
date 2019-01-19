@@ -83,6 +83,8 @@ TextureImporter:
     21300156: Items_14
     21300158: Items_15
     21300160: Items_16
+    21300162: Items_17
+    21300164: Items_18
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -620,6 +622,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: dfa538fe2b8b14da88a16788d7069431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_17
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e56e4232d49344daabc3b20019109e08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Items_18
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 98
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a9891157e2d44da843c4dfc0b109b0
       vertices: []
       indices: 
       edges: []

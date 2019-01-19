@@ -11226,15 +11226,15 @@ MonoBehaviour:
     - Wooden Sword
     rewardGold: 5
   - enemies:
-    - Skeletor
+    - Arachnoob
     - Hatchling
     rewardXP: 250
     rewardItems:
     - Leather Armor
     rewardGold: 5
   - enemies:
-    - Orc
-    - Orc
+    - Arachnoob
+    - Arachnoob
     rewardXP: 500
     rewardItems:
     - Health Potion

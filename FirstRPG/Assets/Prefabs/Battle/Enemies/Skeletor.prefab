@@ -58,14 +58,14 @@ MonoBehaviour:
   charName: Skeletor
   equippedWpn: 
   equippedArmr: 
-  currentHP: 200
-  maxHP: 200
+  currentHP: 2000
+  maxHP: 2000
   currentMP: 0
   maxMP: 0
-  strength: 2
-  defence: 10
-  wpnPwr: 2
-  armrPwr: 7
+  strength: 12
+  defence: 6
+  wpnPwr: 10
+  armrPwr: 3
   hasDied: 0
   theSprite: {fileID: 212622831513119248}
   deadSprite: {fileID: 0}

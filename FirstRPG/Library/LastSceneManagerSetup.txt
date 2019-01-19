@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/EdhygamForest.unity
+- path: Assets/Scenes/ForkedRoad.unity
   isLoaded: 1
   isActive: 1
