@@ -8,15 +8,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 18257379be8524e24954d3da6f8eb159
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Test.unity
     guid: d6b1459c610f345bfbecc7142468b059
-  - enabled: 1
-    path: Assets/Scenes/Test2.unity
-    guid: 5b0273884c9bb45fabe30ab0c7127c76
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Countryside.unity
     guid: ac1171d351aeb4c2f9ca3c6bb5050c1d
@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tunnel.unity
     guid: 7dc7a6861b146441b93021589c999d43
+  - enabled: 1
+    path: Assets/Scenes/DracoCastle.unity
+    guid: 0f7379a8580fc4a35975485a40c1b52b
   m_configObjects: {}

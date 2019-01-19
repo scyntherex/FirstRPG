@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/DracoCastle.unity
+- path: Assets/Scenes/DracoCity.unity
   isLoaded: 1
   isActive: 1

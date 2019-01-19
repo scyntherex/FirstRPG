@@ -61,8 +61,8 @@ MonoBehaviour:
   charName: Ganondalf Illusion Final
   equippedWpn: 
   equippedArmr: 
-  currentHP: 1
-  maxHP: 1
+  currentHP: 4500
+  maxHP: 4500
   currentMP: 0
   maxMP: 0
   strength: 12
