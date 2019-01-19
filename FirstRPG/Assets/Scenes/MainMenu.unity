@@ -438,7 +438,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The First RPG
+  m_Text: Dragonslayers
 --- !u!222 &578212648
 CanvasRenderer:
   m_ObjectHideFlags: 0
