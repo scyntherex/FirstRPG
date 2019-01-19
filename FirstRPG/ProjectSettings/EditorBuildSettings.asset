@@ -68,4 +68,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EdhygamForest.unity
     guid: 35e138f11db634d41b1d6c003a636232
+  - enabled: 1
+    path: Assets/Scenes/Tunnel.unity
+    guid: 7dc7a6861b146441b93021589c999d43
   m_configObjects: {}
