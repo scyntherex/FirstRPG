@@ -22,6 +22,8 @@ TextureImporter:
       Sharm, Zabin_9
     21300020: DAGRONS5 - Credit to Stephen 'Redshrike' Challener, MrBeast, Surt, Blarumyrran,
       Sharm, Zabin_10
+    21300022: Battle Bosses_0
+    21300024: Battle Bosses_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -139,6 +141,46 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8a725359d537ea344b37d82bdc6fd30b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battle Bosses_0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 164
+        width: 172
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98839605621db481f8904787a46deec4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Battle Bosses_1
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 241
+        width: 80
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c456e18c19e44a05b10ebc7f06c3441
       vertices: []
       indices: 
       edges: []
